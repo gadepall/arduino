@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,9 +421,12 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box34
 \enitdp@description=\count126
 )
-(/home/gadepall/texmf/tex/latex/iithtlc/iithtlc.sty
-Package: iithtlc 10/04/2016 IITH TLC
+(/home/gadepall/texmf/tex/latex/eenrc/eenrc.sty
 
+LaTeX Warning: You have requested package `eenrc',
+               but the package provides `iithtlc'.
+
+Package: iithtlc 10/04/2016 IITH TLC
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -859,23 +862,23 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 268.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 268.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-File: tlc.eps Graphic file (type eps)
- <tlc.eps> (./gvv_ard_sevenseg.toc)
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+(./gvv_ard_sevenseg.toc)
 \tf@toc=\write4
 \openout4 = `gvv_ard_sevenseg.toc'.
 
-
-(./figs/components.tex
+ (./figs/components.tex
 \gnumericTableWidth=\skip68
 \gnumericTableWidthComplete=\skip69
 \gnumericMultiRowLength=\skip70
@@ -884,32 +887,41 @@ File: tlc.eps Graphic file (type eps)
 \gnumericColC=\skip73
 ) (./figs/ard_breadboard.tex)
 File: ./figs/breadboard.eps Graphic file (type eps)
- <./figs/breadboard.eps>
+
+<./figs/breadboard.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figs/ard_disp.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figs/sevenseg.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [1
 
 
-] (./figs/ard_disp.tex) (./figs/sevenseg.tex) (./figs/arduinoport.tex
+] (./figs/arduinoport.tex
 \gnumericColD=\skip74
 \gnumericColE=\skip75
 \gnumericColF=\skip76
 \gnumericColG=\skip77
 \gnumericColH=\skip78
+) (./figs/sevenseg12.tex) (./figs/ard_disp_num.tex)
+[2] (./gvv_ard_sevenseg.aux)
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./figs/sevenseg12.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figs/ard_disp_num.tex) [2] (./gvv_ard_sevenseg.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
  17225 strings out of 494848
- 321717 string characters out of 6179105
- 368233 words of memory out of 5000000
+ 321708 string characters out of 6179105
+ 367233 words of memory out of 5000000
  20210 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,12n,54p,508b,1062s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_sevenseg.dvi (2 pages, 28628 bytes).
+Output written on gvv_ard_sevenseg.dvi (2 pages, 28640 bytes).

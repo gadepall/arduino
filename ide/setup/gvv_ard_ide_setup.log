@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  15 OCT 2018 15:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,9 +421,12 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box34
 \enitdp@description=\count126
 )
-(/home/gadepall/texmf/tex/latex/iithtlc/iithtlc.sty
-Package: iithtlc 10/04/2016 IITH TLC
+(/home/gadepall/texmf/tex/latex/eenrc/eenrc.sty
 
+LaTeX Warning: You have requested package `eenrc',
+               but the package provides `iithtlc'.
+
+Package: iithtlc 10/04/2016 IITH TLC
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -1126,18 +1129,19 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 275.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 275.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
-File: tlc.eps Graphic file (type eps)
- <tlc.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-File: tlc.eps Graphic file (type eps)
- <tlc.eps> (./gvv_ard_ide_setup.toc)
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+(./gvv_ard_ide_setup.toc)
 \tf@toc=\write5
 \openout5 = `gvv_ard_ide_setup.toc'.
 
@@ -1156,11 +1160,11 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (./gvv_ard_ide_setup.aux) ) 
 Here is how much of TeX's memory you used:
  32652 strings out of 494848
- 708016 string characters out of 6179105
+ 708007 string characters out of 6179105
  897338 words of memory out of 5000000
  35574 multiletter control sequences out of 15000+600000
  594476 words of font info for 175 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,7n,54p,10385b,1379s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_ide_setup.dvi (1 page, 9940 bytes).
+Output written on gvv_ard_ide_setup.dvi (1 page, 9944 bytes).

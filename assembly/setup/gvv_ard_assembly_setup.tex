@@ -34,7 +34,7 @@
 %\usepackage{algpseudocode}
 %\usepackage{enumitem}
 \usepackage{mathtools}
-\usepackage{iithtlc}
+\usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
 \usepackage{hyperref}
 \usepackage{listings}
@@ -205,9 +205,9 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{ 
-%	\logo{
+	\logo{
 AVR-Assembly Setup
-%	}
+	}
 }
 
 
@@ -318,37 +318,32 @@ sudo dmesg | grep tty
 cd ~
 wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/setup/m328Pdef/m328Pdef.inc
 \end{lstlisting}
+\item 
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/setup/codes/hello.asm
+\end{lstlisting}
+\item Open \textbf{hello.asm} in \textbf{geany}. Go to Build$\rightarrow$Set Build Commands$\rightarrow$Compile and type
+\begin{lstlisting}
+avra "%f"
+\end{lstlisting}
+\item Then  go to Build$\rightarrow$Set Build Commands$\rightarrow$Execute and type
+\begin{lstlisting}
+avrdude -p atmega328p -c arduino -P /dev/ttyACM0 -b 115200 -U flash:w:%e.hex
+\end{lstlisting}
+\item In \textbf{hello.asm} replace \textbf{gadepall} in 
+\begin{lstlisting}
+.include "/home/gadepall/m328Pdef.inc"
+\end{lstlisting}
+with your username.
+\item Connect the arduino to the computer.
+\item Compile by pressing \textbf{F8}. Execute by pressing \textbf{F5}.  You should
+see the led beside pin 13 light up.
+\item Now edit \textbf{hello.asm} by modifying the line to
+\begin{lstlisting}
+ldi r17,0b00000000
+\end{lstlisting}
+Save and execute.  The led should turn off.
 \end{enumerate}
-%\input{./chapters/chapter1}
-
-%%\newpage
-%\section{Display Decoder}
-%\input{./chapters/chapter2}
-
-%\section{Combinational Logic}
-%\label{sec:counting_decoder}
-%\input{./chapters/chapter3}
-
-%%%\newpage
-%\section{Decade Counter through Arduino}
-%\input{./chapters/chapter4}
-%%
-%\section{Karnaugh Maps}
-%\input{./chapters/chapter5}
-
-%\input{arduinoport}
-
-%\bibliography{IEEEabrv,gvv_matrix}
-
-%\input{chapter2} 
-%%
-%\newpage
-%\section{$M$-ary Modulation}
-%\input{chapter3} 
-%
-%\newpage
-%\section{BER in Rayleigh Flat Slowly Fading Channels}
-%\input{chapter4} 
 
 \end{document}
 
