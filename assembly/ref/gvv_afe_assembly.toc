@@ -1,0 +1,10 @@
+\contentsline {section}{\numberline {1}Components}{1}
+\contentsline {section}{\numberline {2}Seven Segment Display}{1}
+\contentsline {subsection}{\numberline {2.1}Hardware Setup}{1}
+\contentsline {subsection}{\numberline {2.2}Software Setup}{2}
+\contentsline {subsection}{\numberline {2.3}Controlling the Display}{2}
+\contentsline {section}{\numberline {3}Display Decoder}{3}
+\contentsline {subsection}{\numberline {3.1}Driving the Segments}{3}
+\contentsline {section}{\numberline {4}Boolean Operations}{4}
+\contentsline {section}{\numberline {5}Combinational Logic}{5}
+\contentsline {section}{\numberline {6}Decade Counter through Arduino}{5}
