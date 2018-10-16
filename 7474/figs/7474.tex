@@ -1,55 +1,74 @@
+%\documentclass{standalone}
+%\usepackage{tikz}
+%\usepackage{amsmath,amssymb}
+%\makeatletter
+%\newsavebox\myboxA
+%\newsavebox\myboxB
+%\newlength\mylenA
+%\newcommand*\xoverline[2][0.75]{%
+%    \sbox{\myboxA}{$\m@th#2$}%
+%    \setbox\myboxB\null% Phantom box
+%    \ht\myboxB=\ht\myboxA%
+%    \dp\myboxB=\dp\myboxA%
+%    \wd\myboxB=#1\wd\myboxA% Scale phantom
+%    \sbox\myboxB{$\m@th\overline{\copy\myboxB}$}%  Overlined phantom
+%    \setlength\mylenA{\the\wd\myboxA}%   calc width diff
+%    \addtolength\mylenA{-\the\wd\myboxB}%
+%    \ifdim\wd\myboxB<\wd\myboxA%
+%       \rlap{\hskip 0.5\mylenA\usebox\myboxB}{\usebox\myboxA}%
+%    \else
+%        \hskip -0.5\mylenA\rlap{\usebox\myboxA}{\hskip 0.5\mylenA\usebox\myboxB}%
+%    \fi}
+%\makeatother
+%
+%
+%\begin{document}
 
-
-\documentclass{standalone}
-\usepackage{tikz}
-\usepackage{amsmath}
-\begin{document}
 \begin{tikzpicture}[scale=1,
      pin/.style={draw,rectangle,minimum width=2em,font=\small}
      ]
-   % Main trick: loop over the label numbers and then adjust their position
-   % in the tikzpicture using evaluate to calculate \y=y-coordinate of pin
+%   \clip (18,.5) rectangle (5,2);           
+%Vertices of the main display rectangle
+\def \xmin{0}
+\def \xmax{17}
+\def \ymin{0}
+\def \ymax{6}
 
-   \foreach \i/\desc [evaluate=\i  as \x using (\i+5 )]
-      in {1/{RD1},
-          2/{D1},
-          3/{CLK1},
-          4/{SD1},
-          5/{Q1},
-          6/{Q1'},
-          7/{GND}}
-   {
-     \draw node[pin,anchor=east,rotate=360] at (\x+.5,-.2){\small$\i$};
-     \node[align=right,anchor=east,rotate=360] at (\x+.5,-1){\desc};
-   }
-  
-   \foreach \i/\desc [evaluate=\i as \x using (20-\i)]
-      in {8/{Q2'},
-          9/{Q2},
-          10/{SD2},
-          11/{CLK2},
-          12/{D2},
-          13/{RD2},
-          14/{V$_{\text{CC}}$}}
-   {
-     \draw node[pin,anchor=west,rotate=360] at (\x-.5,3.2){\small$\i$};
-     \node[align=right,anchor=west,rotate=360] at (\x-.5,4){\desc};
-   }
-   \draw
-      (5,0.8)--(5,3)--(5,3)--(13,3)--(13,3)
-             --(13,0.8)--(13,0)--(5,0)--cycle;
-    \begin{scope}         
-    \clip (15,.5) rectangle (5,2);         
-   \draw(5.2,1.5)circle[radius=0.4];
-   \end{scope}
-   \begin{scope}
-   \clip (0,-1.5) rectangle (1.5,1.5);
-    \draw (2,) circle(6.5);
-\end{scope}
+%Number of pins on a side
+\def \n{7}
+\def \k{1.6}
 
-   \node at (9,1.5){\textbf{\LARGE{7474}}};
+%Draw the display rectangle
+
+
+%Define height of pins and their separation
+\def \height{2}
+\pgfmathsetmacro{\centx}{(\xmax+\xmin)/2}
+\pgfmathsetmacro{\centy}{(\ymax+\ymin)/2}
+\pgfmathsetmacro{\wid}{(\xmax-\xmin)/(\n-1)}
+
+
+\draw ({\xmin-0.5*\wid},\ymin)rectangle ({\xmax+0.5*\wid},\ymax);
+
+%Defining y axis divisions
+\pgfmathsetmacro{\ywid}{(\ymin-\ymax)/(\n-2)}
+
+%Putting text 7447 at the centre
+   \node at (\centx,\centy) {\textbf{\LARGE{7474}}};
+
+      
+\foreach [count=\i] \k in {$V_{CC}$,,D2,CLK2,,Q2,}
+   {
+\pgfmathsetmacro{\j}{int(round(15-\i)}
+\draw node[pin,anchor=center] at ({\xmin+(\i-1)*\wid},{\ymin-0.15*\wid}){\LARGE \i};
+\draw node[pin,anchor=center] at ({\xmin+(\i-1)*\wid},{\ymax+0.15*\wid}){\LARGE \j};
+            \node (\i) at ( {\xmin+(\i-1)*\wid},{\ymax+0.45*\wid}) {\LARGE \k} ;
+   }
+
+\foreach [count=\i] \k in {,D1,CLK1,,Q1,,GND}
+{
+            \node (\i) at ( {\xmin+(\i-1)*\wid},{\ymin-0.45*\wid}) {\LARGE \k} ;              
+ }
+\draw (-0.5*\wid,{\centy-0.5}) arc (-90:90:0.5) ;
  \end{tikzpicture}
-\end{document}
-
-
-
+%\end{document}

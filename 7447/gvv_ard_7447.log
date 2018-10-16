@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 18:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,62 +873,329 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (./gvv_ard_7447.aux)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2017/05/28{} The CircuiTikz circuit drawing package version
+ 0.8.3
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen269
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@res@up=\dimen270
+\pgf@circ@res@down=\dimen271
+\pgf@circ@res@zero=\dimen272
+\pgf@circ@res@left=\dimen273
+\pgf@circ@res@right=\dimen274
+\pgf@circ@res@other=\dimen275
+\pgf@circ@res@step=\dimen276
+\pgf@circ@res@temp=\dimen277
+\pgfstartlinewidth=\dimen278
+\pgf@circ@Rlen=\dimen279
+) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/karnaugh-map/karnaugh-map.sty
+Package: karnaugh-map 2017/02/20 v1.1 Draw Karnaugh Maps
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/02/21 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/02/21 L3 programming layer (code)
+\c_max_int=\count166
+\l_tmpa_int=\count167
+\l_tmpb_int=\count168
+\g_tmpa_int=\count169
+\g_tmpb_int=\count170
+\g__intarray_font_int=\count171
+\g__prg_map_int=\count172
+\c_log_iow=\count173
+\l_iow_line_count_int=\count174
+\l__iow_line_target_int=\count175
+\l__iow_one_indent_int=\count176
+\l__iow_indent_int=\count177
+\c_zero_dim=\dimen280
+\c_max_dim=\dimen281
+\l_tmpa_dim=\dimen282
+\l_tmpb_dim=\dimen283
+\g_tmpa_dim=\dimen284
+\g_tmpb_dim=\dimen285
+\c_zero_skip=\skip69
+\c_max_skip=\skip70
+\l_tmpa_skip=\skip71
+\l_tmpb_skip=\skip72
+\g_tmpa_skip=\skip73
+\g_tmpb_skip=\skip74
+\c_zero_muskip=\muskip12
+\c_max_muskip=\muskip13
+\l_tmpa_muskip=\muskip14
+\l_tmpb_muskip=\muskip15
+\g_tmpa_muskip=\muskip16
+\g_tmpb_muskip=\muskip17
+\l_keys_choice_int=\count178
+\c__fp_leading_shift_int=\count179
+\c__fp_middle_shift_int=\count180
+\c__fp_trailing_shift_int=\count181
+\c__fp_big_leading_shift_int=\count182
+\c__fp_big_middle_shift_int=\count183
+\c__fp_big_trailing_shift_int=\count184
+\c__fp_Bigg_leading_shift_int=\count185
+\c__fp_Bigg_middle_shift_int=\count186
+\c__fp_Bigg_trailing_shift_int=\count187
+\c__fp_rand_size_int=\count188
+\c__fp_rand_four_int=\count189
+\c__fp_rand_eight_int=\count190
+\l__sort_length_int=\count191
+\l__sort_min_int=\count192
+\l__sort_top_int=\count193
+\l__sort_max_int=\count194
+\l__sort_true_max_int=\count195
+\l__sort_block_int=\count196
+\l__sort_begin_int=\count197
+\l__sort_end_int=\count198
+\l__sort_A_int=\count199
+\l__sort_B_int=\count266
+\l__sort_C_int=\count267
+\l__tl_build_start_index_int=\count268
+\l__tl_build_index_int=\count269
+\l__tl_analysis_normal_int=\count270
+\l__tl_analysis_index_int=\count271
+\l__tl_analysis_nesting_int=\count272
+\l__tl_analysis_type_int=\count273
+\l__regex_internal_a_int=\count274
+\l__regex_internal_b_int=\count275
+\l__regex_internal_c_int=\count276
+\l__regex_balance_int=\count277
+\l__regex_group_level_int=\count278
+\l__regex_mode_int=\count279
+\c__regex_cs_in_class_mode_int=\count280
+\c__regex_cs_mode_int=\count281
+\l__regex_catcodes_int=\count282
+\l__regex_default_catcodes_int=\count283
+\c__regex_catcode_D_int=\count284
+\c__regex_catcode_S_int=\count285
+\c__regex_catcode_L_int=\count286
+\c__regex_catcode_O_int=\count287
+\c__regex_catcode_A_int=\count288
+\c__regex_all_catcodes_int=\count289
+\l__regex_show_lines_int=\count290
+\l__regex_min_state_int=\count291
+\l__regex_max_state_int=\count292
+\l__regex_left_state_int=\count293
+\l__regex_right_state_int=\count294
+\l__regex_capturing_group_int=\count295
+\l__regex_min_pos_int=\count296
+\l__regex_max_pos_int=\count297
+\l__regex_curr_pos_int=\count298
+\l__regex_start_pos_int=\count299
+\l__regex_success_pos_int=\count300
+\l__regex_curr_char_int=\count301
+\l__regex_curr_catcode_int=\count302
+\l__regex_last_char_int=\count303
+\l__regex_case_changed_char_int=\count304
+\l__regex_curr_state_int=\count305
+\l__regex_step_int=\count306
+\l__regex_min_active_int=\count307
+\l__regex_max_active_int=\count308
+\l__regex_replacement_csnames_int=\count309
+\l__regex_match_count_int=\count310
+\l__regex_min_submatch_int=\count311
+\l__regex_submatch_int=\count312
+\l__regex_zeroth_submatch_int=\count313
+\g__regex_trace_regex_int=\count314
+\c_empty_box=\box49
+\l_tmpa_box=\box50
+\l_tmpb_box=\box51
+\g_tmpa_box=\box52
+\g_tmpb_box=\box53
+\l__box_top_dim=\dimen286
+\l__box_bottom_dim=\dimen287
+\l__box_left_dim=\dimen288
+\l__box_right_dim=\dimen289
+\l__box_top_new_dim=\dimen290
+\l__box_bottom_new_dim=\dimen291
+\l__box_left_new_dim=\dimen292
+\l__box_right_new_dim=\dimen293
+\l__box_internal_box=\box54
+\l__coffin_internal_box=\box55
+\l__coffin_internal_dim=\dimen294
+\l__coffin_offset_x_dim=\dimen295
+\l__coffin_offset_y_dim=\dimen296
+\l__coffin_x_dim=\dimen297
+\l__coffin_y_dim=\dimen298
+\l__coffin_x_prime_dim=\dimen299
+\l__coffin_y_prime_dim=\dimen300
+\c_empty_coffin=\box56
+\l__coffin_aligned_coffin=\box57
+\l__coffin_aligned_internal_coffin=\box58
+\l_tmpa_coffin=\box59
+\l_tmpb_coffin=\box60
+\l__coffin_display_coffin=\box61
+\l__coffin_display_coord_coffin=\box62
+\l__coffin_display_pole_coffin=\box63
+\l__coffin_display_offset_dim=\dimen301
+\l__coffin_display_x_dim=\dimen302
+\l__coffin_display_y_dim=\dimen303
+\l__coffin_bounding_shift_dim=\dimen304
+\l__coffin_left_corner_dim=\dimen305
+\l__coffin_right_corner_dim=\dimen306
+\l__coffin_bottom_corner_dim=\dimen307
+\l__coffin_top_corner_dim=\dimen308
+\l__coffin_scaled_total_height_dim=\dimen309
+\l__coffin_scaled_width_dim=\dimen310
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3dvips.def
+File: l3dvips.def 2017/03/18 v L3 Experimental driver: dvips
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count315
+\g__xparse_grabber_int=\count316
+\l__xparse_m_args_int=\count317
+\l__xparse_mandatory_args_int=\count318
+\l__xparse_v_nesting_int=\count319
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count320
+\decimalpart=\count321
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarymatrix.code.tex
+File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
+)
+.................................................
+. LaTeX info: "xparse/define-environment"
+. 
+. Defining environment 'karnaugh-map' with sig. 's O{4} O{4} O{1} O{$X_1X_0$}
+. O{$X_3X_2$} O{$X_5X_4$}' on line 281.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \autoterms with sig. 'O{-}' on line 311.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \indeterminants with sig. 'm' on line 317.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \manualterms with sig. 'm' on line 342.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \maxterms with sig. 'm' on line 348.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \minterms with sig. 'm' on line 354.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \terms with sig. 'm m' on line 367.
+.................................................
+\@karnaughmap@var@colorindex@=\count322
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \implicant with sig. 'm m O{0}' on line 426.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \implicantedge with sig. 'm m m m O{0}' on line 565.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \implicantcorner with sig. 'O{0}' on line 634.
+.................................................
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+(./gvv_ard_7447.aux)
 \openout1 = `gvv_ard_7447.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 103.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 103
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 107.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 107
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 103
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 107
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 103
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 107
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 103.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 103.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 107.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
-LaTeX Font Info:    ... okay on input line 103.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 103.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 107.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 103.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 103
+LaTeX Info: Redefining \celsius on input line 107.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 107
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 103.
-Package gensymb Info: Using \Omega for \ohm on input line 103.
+LaTeX Info: Redefining \ohm on input line 107.
+Package gensymb Info: Using \Omega for \ohm on input line 107.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -941,8 +1208,8 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box49
-Package hyperref Info: Link coloring OFF on input line 103.
+\AtBeginShipoutBox=\box64
+Package hyperref Info: Link coloring OFF on input line 107.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -950,53 +1217,53 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count166
+\c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 103.
-LaTeX Info: Redefining \pageref on input line 103.
-LaTeX Info: Redefining \nameref on input line 103.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (./gvv_ard_7447.out) (./gvv_ard_7447.out)
-\@outlinefile=\write4
-\openout4 = `gvv_ard_7447.out'.
+\@outlinefile=\write5
+\openout5 = `gvv_ard_7447.out'.
 
-\c@lstlisting=\count167
+\c@lstlisting=\count324
 
 ABD: EveryShipout initializing macros
-\c@theorem=\count168
-\c@problem=\count169
-\c@proposition=\count170
-\c@lemma=\count171
-\c@example=\count172
-\c@definition=\count173
-\c@rem=\count174
+\c@theorem=\count325
+\c@problem=\count326
+\c@proposition=\count327
+\c@lemma=\count328
+\c@example=\count329
+\c@definition=\count330
+\c@rem=\count331
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 271.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 271.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 278.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 278.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 271.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 278.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 271.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 278.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 271.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 278.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 271.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 278.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -1004,7 +1271,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 271.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 278.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
@@ -1014,36 +1281,39 @@ File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
 File: tlc.eps Graphic file (type eps)
  <tlc.eps> (./gvv_ard_7447.toc)
-\tf@toc=\write5
-\openout5 = `gvv_ard_7447.toc'.
+\tf@toc=\write6
+\openout6 = `gvv_ard_7447.toc'.
 
 
 (./figs/components.tex
-\gnumericTableWidth=\skip69
-\gnumericTableWidthComplete=\skip70
-\gnumericMultiRowLength=\skip71
-\gnumericColA=\skip72
-\gnumericColB=\skip73
-\gnumericColC=\skip74
+\gnumericTableWidth=\skip75
+\gnumericTableWidthComplete=\skip76
+\gnumericMultiRowLength=\skip77
+\gnumericColA=\skip78
+\gnumericColB=\skip79
+\gnumericColC=\skip80
 ) (./figs/7447_disp.tex
-\gnumericColD=\skip75
-\gnumericColE=\skip76
-\gnumericColF=\skip77
-\gnumericColG=\skip78
-\gnumericColH=\skip79
+\gnumericColD=\skip81
+\gnumericColE=\skip82
+\gnumericColF=\skip83
+\gnumericColG=\skip84
+\gnumericColH=\skip85
 ) (./figs/sevenseg.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figs/bin2dec.tex) (./figs/7447.tex
-\myboxA=\box50
-\myboxB=\box51
-\mylenA=\skip80
-) [1
+\myboxA=\box65
+\myboxB=\box66
+\mylenA=\skip86
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
 
 
-] (./figs/7447_ard.tex)
-(./figs/counter_decoder.tex
+] (./figs/7447_ard.tex) (./figs/counter_decoder.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1052,22 +1322,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 403.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 403.
  (./gvv_ard_7447.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 403.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 403.
 Package rerunfilecheck Info: File `gvv_ard_7447.out' has not changed.
 (rerunfilecheck)             Checksum: 1E4B42A8D184FBC56908D093A0C2B111;131.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 403.
  ) 
 Here is how much of TeX's memory you used:
- 21181 strings out of 494848
- 382444 string characters out of 6179105
- 512744 words of memory out of 5000000
- 24114 multiletter control sequences out of 15000+600000
- 73426 words of font info for 186 fonts, out of 8000000 for 9000
+ 36807 strings out of 494848
+ 773009 string characters out of 6179105
+ 1009918 words of memory out of 5000000
+ 39657 multiletter control sequences out of 15000+600000
+ 600058 words of font info for 194 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,14n,58p,409b,1106s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,58p,10380b,1907s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_7447.dvi (2 pages, 50588 bytes).
+Output written on gvv_ard_7447.dvi (2 pages, 51076 bytes).
