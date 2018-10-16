@@ -339,7 +339,7 @@ Complete Table \ref{table:bin2dec} by generating all numbers between 0-9.
 \begin{problem}
 Now make the connections as per Table \ref{table:7447_ard}  and execute the following program after downloading
 \begin{lstlisting}
-wget 
+wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/gvv_ard_7447/gvv_ard_7447.ino
 \end{lstlisting}
 \end{problem}
 \begin{table}[!h]
@@ -348,6 +348,23 @@ wget
 \caption{}
 \label{table:7447_ard}
 \end{table}
+In the  truth table in Table \ref{table:counter_decoder},  $W,X,Y,Z$ are the inputs
+and $A,B,C,D$ are the outputs. This table represents the system that increments the numbers 0-8 by 1 and resets the number 9 to 0
+%
+Note that  $D = 1$ for the inputs $0111$ and $1000$.  Using {\em boolean} logic,
+%
+\begin{equation}
+\label{bool_logic}
+D = WXYZ^{'} + W^{'}X^{'}Y^{'}Z
+\end{equation}
+%
+Note that $0111$ results in the expression $WXYZ^{'}$ and $1000$ yields $W^{'}X^{'}Y^{'}Z$. 
+%
+\begin{problem}
+The code below realizes the Boolean logic for B, C and D in  Table \ref{table:counter_decoder}.  Write the logic for A and verify.
+ \end{problem}
+\solution	
+\input{./figs/counter_decoder.tex}
 
 %\subsection{Breadboard}
 %The breadboard can be divided into 5 segments.  In each of the green segements, the pins are internally connected so as to have the same voltage.  Similarly, in the central segments, the pins in each column  are internally connected in the same fashion as the blue columns. 
