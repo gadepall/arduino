@@ -362,9 +362,24 @@ Note that $0111$ results in the expression $WXYZ^{'}$ and $1000$ yields $W^{'}X^
 %
 \begin{problem}
 The code below realizes the Boolean logic for B, C and D in  Table \ref{table:counter_decoder}.  Write the logic for A and verify.
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/inc_dec/inc_dec.ino
+\end{lstlisting}
  \end{problem}
-\solution	
 \input{./figs/counter_decoder.tex}
+\begin{problem}
+Now make additional connections as shown in Table \ref{table:ip_7447_ard} and execute the following code.  Comment.
+\begin{lstlisting}
+\end{lstlisting}
+\end{problem}
+\solution
+In this exercise, we are taking the number 5 as input to the arduino and displaying it on the seven segment display using the 7447 IC.
+\begin{table}[!h]
+\centering
+\input{./figs/ip_7447_ard.tex}
+\caption{}
+\label{table:ip_7447_ard}
+\end{table}
 
 %\subsection{Breadboard}
 %The breadboard can be divided into 5 segments.  In each of the green segements, the pins are internally connected so as to have the same voltage.  Similarly, in the central segments, the pins in each column  are internally connected in the same fashion as the blue columns. 
