@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -970,7 +970,9 @@ ABD: EveryShipout initializing macros
 \c@example=\count172
 \c@definition=\count173
 \c@rem=\count174
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 271.
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 271.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 271.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -999,11 +1001,24 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 271.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./gvv_ard_7447.toc)
+)
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 271.
+File: iith_logo.eps Graphic file (type eps)
+
+<iith_logo.eps>
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps> (./gvv_ard_7447.toc)
 \tf@toc=\write5
 \openout5 = `gvv_ard_7447.toc'.
 
- (./figs/components.tex
+
+(./figs/components.tex
 \gnumericTableWidth=\skip69
 \gnumericTableWidthComplete=\skip70
 \gnumericMultiRowLength=\skip71
@@ -1020,41 +1035,39 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figs/bin2dec.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figs/7447.tex
+(./figs/bin2dec.tex) (./figs/7447.tex
 \myboxA=\box50
 \myboxB=\box51
 \mylenA=\skip80
-)
+) [1
+
+
+] (./figs/7447_ard.tex)
+(./figs/counter_decoder.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[1
+) (./figs/ip_7447_ard.tex)
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-] (./figs/7447_ard.tex) (./figs/counter_decoder.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 476.
- [2
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 476.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
  (./gvv_ard_7447.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 476.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 476.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 397.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
 Package rerunfilecheck Info: File `gvv_ard_7447.out' has not changed.
 (rerunfilecheck)             Checksum: 1E4B42A8D184FBC56908D093A0C2B111;131.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 476.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
- 21138 strings out of 494848
- 381762 string characters out of 6179105
- 506284 words of memory out of 5000000
- 24077 multiletter control sequences out of 15000+600000
- 66511 words of font info for 164 fonts, out of 8000000 for 9000
+ 21181 strings out of 494848
+ 382444 string characters out of 6179105
+ 512744 words of memory out of 5000000
+ 24114 multiletter control sequences out of 15000+600000
+ 73426 words of font info for 186 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,14n,58p,409b,1106s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_7447.dvi (2 pages, 45028 bytes).
+Output written on gvv_ard_7447.dvi (2 pages, 49980 bytes).

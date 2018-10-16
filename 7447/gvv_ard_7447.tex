@@ -196,9 +196,9 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{ 
-%	\logo{
+	\logo{
 Boolean Logic through 7447
-%		}
+		}
 }
 
 
@@ -370,6 +370,7 @@ wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/inc_de
 \begin{problem}
 Now make additional connections as shown in Table \ref{table:ip_7447_ard} and execute the following code.  Comment.
 \begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/ip_inc_dec/ip_inc_dec.ino
 \end{lstlisting}
 \end{problem}
 \solution
@@ -380,111 +381,18 @@ In this exercise, we are taking the number 5 as input to the arduino and display
 \caption{}
 \label{table:ip_7447_ard}
 \end{table}
-
-%\subsection{Breadboard}
-%The breadboard can be divided into 5 segments.  In each of the green segements, the pins are internally connected so as to have the same voltage.  Similarly, in the central segments, the pins in each column  are internally connected in the same fashion as the blue columns. 
-%\subsection{Seven Segment Display}
-%The seven segment display in Fig. \ref{fig:sevenseg} has eight pins, $a, b, c, d, e, f, g$ and $dot$ that take an active LOW input, i.e.  the LED will glow only if the input is connected to ground.  Each of these pins is connected to an LED segment.  The $dot$ pin is  reserved for the $\cdot$ LED.  
-
-%\subsection{Arduino}
-%The Arduino Uno has some ground pins, analog input pins A0-A3 and digital pins D1-D13 that can be used for both input as well as output. It also has two power pins that can generate 3.3$V$ and 5$V$.  In the following exercises, only the GND, 5$V$ and digital pins will be used.
-
-
-%\section{Display Control through Hardware }
-%\subsection{Powering the Display}
-
-%\begin{problem}
-	%Plug the display to the breadboard in Fig. \ref{fig:breadboard} and make the connections in Table \ref{table:ard_breadboard}.  Henceforth, all 5V and GND connections will be made from the breadboard.
-%\end{problem}
-%\begin{table}[!h]
-%\centering
-%\input{./figs/ard_breadboard}
-%\caption{}
-%\label{table:ard_breadboard}
-%\end{table}
-
-%\begin{figure}[!h]
-%\begin{center}
-%\includegraphics[width=\columnwidth]{./figs/breadboard}
-%\end{center}
-%\caption{}
-%\label{fig:breadboard}
-%\end{figure}
-
-
-%%
-%%\begin{center}
-	%%\includegraphics[scale=1]{sevenseg}
-%%\end{center}
-
-%\begin{problem}
-%Make the  connections in Table \ref{table:ard_disp}.  
-%\end{problem}
-%%
-%\begin{table}[!h]
-%\centering
-%\input{./figs/ard_disp}
-%\caption{}
-%\label{table:ard_disp}
-%\end{table}
-
-%%
-%%
-%\begin{figure}[!h]
-%\begin{center}
-%\resizebox {0.5\columnwidth} {!} {
-%\input{./figs/sevenseg.tex}
-%}
-%\end{center}
-%\caption{}
-%\label{fig:sevenseg}
-%\end{figure}
-
-%%
-%\begin{problem}
-	%Connect the Arduino to the computer. The DOT led should glow.
-%\end{problem}
-%\subsection{Controlling the Display}
-%Fig. \ref{fig:sevenseg12} explains how to get decimal digits using the seven segment display. GND=0.  
-%\begin{problem}
-	%Generate the number 1 on the display by connecting only the pins $b$ and $c$ to GND (=0). This corresponds to the  first row of \ref{table:arduioport}. 1 means not connecting to GND.
-%\end{problem}	
-%\begin{problem}
-	%Repeat the above exercise to generate the number 2 on the display.
-%\end{problem}	
-%%
-%\begin{problem}
-%Draw the numbers 0-9 as in Fig. \ref{fig:sevenseg12} and complete Table \ref{table:arduioport}
-%\end{problem}	
-%\input{./figs/arduinoport}
-%%
-%%
-%\begin{figure}[!h]
-%\begin{center}
-%\resizebox {0.8\columnwidth} {!} {
-%\input{./figs/sevenseg12.tex}
-%}
-%\end{center}
-%\caption{}
-%\label{fig:sevenseg12}
-%\end{figure}
-%%
-%\section{Display Control through Software}
-%\begin{problem}
-%Make connections according to Table \ref{table:ard_disp_num}
-%\begin{table}
-%\centering
-%\input{./figs/ard_disp_num}
-%\caption{}
-%\label{table:ard_disp_num}
-%\end{table}
-%\end{problem}
-%\begin{problem}
-%Execute the following code using the arduino IDE
-%\end{problem}
-%\begin{problem}
-%Now generate the numbers 0-9 by modifying the above program.
-%\end{problem}
+\begin{problem}
+Verify the above code for all inputs from 0-9.
+\end{problem}
+\begin{problem}
+Now write a program where 
+\begin{enumerate}
+\item the binary inputs are given by
+connecting to 0 and 1 on the breadboard
+\item incremented by 1 using Table \ref{table:counter_decoder} and
+\item the incremented value is displayed on the seven segment display.
+\end{enumerate}
+\end{problem}
 
 \end{document}
 
