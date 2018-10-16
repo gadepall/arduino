@@ -99,9 +99,10 @@
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
 breaklines=true
+columns=fullflexible
 }
  
 
@@ -313,6 +314,10 @@ sudo dmesg | grep tty
 %and your port number is ttyACM0
 \end{lstlisting}
 \item 
+\begin{lstlisting}
+cd ~
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/setup/m328Pdef/m328Pdef.inc
+\end{lstlisting}
 \end{enumerate}
 %\input{./chapters/chapter1}
 
