@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1052,14 +1052,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
  (./gvv_ard_7447.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 402.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
 Package rerunfilecheck Info: File `gvv_ard_7447.out' has not changed.
 (rerunfilecheck)             Checksum: 1E4B42A8D184FBC56908D093A0C2B111;131.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 402.
  ) 
 Here is how much of TeX's memory you used:
  21181 strings out of 494848
@@ -1070,4 +1070,4 @@ Here is how much of TeX's memory you used:
  62 hyphenation exceptions out of 8191
  55i,14n,58p,409b,1106s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_7447.dvi (2 pages, 49980 bytes).
+Output written on gvv_ard_7447.dvi (2 pages, 50588 bytes).
