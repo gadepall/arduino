@@ -91,9 +91,10 @@
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
-breaklines=true
+breaklines=true,
+columns=fullflexible
 }
  
 
@@ -410,7 +411,10 @@ Make connections according to Table \ref{table:ard_disp_num}
 \end{table}
 \end{problem}
 \begin{problem}
-Execute the following code using the arduino IDE
+Download the following code using the arduino IDE and execute
+\begin{lstlisting}
+wget https://github.com/gadepall/arduino/blob/master/sevenseg/codes/sevenseg.ino
+\end{lstlisting}
 \end{problem}
 \begin{problem}
 Now generate the numbers 0-9 by modifying the above program.

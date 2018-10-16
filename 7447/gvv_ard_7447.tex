@@ -35,7 +35,7 @@
 \usepackage{mathtools}
 \usepackage{iithtlc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{listings}
+\usepackage{hyperref}
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -49,6 +49,8 @@
     \usepackage{lscape}     
 
 \usepackage{tikz}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
 
 %\usepackage{stmaryrd}
 
@@ -91,9 +93,10 @@
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
-breaklines=true
+breaklines=true,
+columns=fullflexible
 }
  
 
@@ -268,34 +271,6 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \tableofcontents
 
-
-%\begin{abstract}
-%%\boldmath
-%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
-%
-%\end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%Cooperative diversity, decode and forward, piecewise linear
-%\end{IEEEkeywords}
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
 \IEEEpeerreviewmaketitle
 
 
@@ -346,7 +321,7 @@ Table \ref{table:bin2dec} and connect $V_{CC} = 5$V. You should see the number 0
 \caption{}
 \label{table:bin2dec}
 \end{table}
-
+%
 \begin{figure}[!h]
 \begin{center}
 \resizebox {\columnwidth} {!} {
@@ -358,9 +333,21 @@ Table \ref{table:bin2dec} and connect $V_{CC} = 5$V. You should see the number 0
 \end{figure}
 %
 \begin{problem}
-Complete Table \ref{table:bin2dec}.  
+Complete Table \ref{table:bin2dec} by generating all numbers between 0-9.
 \end{problem}
-
+\section{Software}
+\begin{problem}
+Now make the connections as per Table \ref{table:7447_ard}  and execute the following program after downloading
+\begin{lstlisting}
+wget 
+\end{lstlisting}
+\end{problem}
+\begin{table}[!h]
+\centering
+\input{./figs/7447_ard.tex}
+\caption{}
+\label{table:7447_ard}
+\end{table}
 
 %\subsection{Breadboard}
 %The breadboard can be divided into 5 segments.  In each of the green segements, the pins are internally connected so as to have the same voltage.  Similarly, in the central segments, the pins in each column  are internally connected in the same fashion as the blue columns. 

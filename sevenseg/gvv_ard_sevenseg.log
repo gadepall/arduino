@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  15 OCT 2018 22:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 08:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -752,67 +752,60 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-)))
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-)
-(./gvv_ard_sevenseg.aux)
+))) (./gvv_ard_sevenseg.aux)
 \openout1 = `gvv_ard_sevenseg.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 100.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 100
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 101.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 101
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 100
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 101
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 100
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 101
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 100.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 101.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 101.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 100.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 100.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 101.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 100.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 100
+LaTeX Info: Redefining \celsius on input line 101.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 101
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 100.
-Package gensymb Info: Using \Omega for \ohm on input line 100.
+LaTeX Info: Redefining \ohm on input line 101.
+Package gensymb Info: Using \Omega for \ohm on input line 101.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -836,31 +829,31 @@ ABD: EveryShipout initializing macros
 \c@rem=\count162
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 267.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 267.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 268.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 268.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 267.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 268.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 267.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 268.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 267.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 268.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 267.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 268.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -868,7 +861,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 267.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 268.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
@@ -911,12 +904,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figs/ard_disp_num.tex) [2] (./gvv_ard_sevenseg.aux) ) 
 Here is how much of TeX's memory you used:
- 17025 strings out of 494848
- 320849 string characters out of 6179105
- 396284 words of memory out of 5000000
- 20004 multiletter control sequences out of 15000+600000
+ 17225 strings out of 494848
+ 321717 string characters out of 6179105
+ 368232 words of memory out of 5000000
+ 20210 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,12n,54p,508b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,54p,508b,1062s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_sevenseg.dvi (2 pages, 28032 bytes).
+Output written on gvv_ard_sevenseg.dvi (2 pages, 28608 bytes).
