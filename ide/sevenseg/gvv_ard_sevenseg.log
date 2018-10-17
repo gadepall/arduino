@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  16 OCT 2018 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  17 OCT 2018 22:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -910,18 +910,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \gnumericColG=\skip77
 \gnumericColH=\skip78
 ) (./figs/sevenseg12.tex) (./figs/ard_disp_num.tex)
-[2] (./gvv_ard_sevenseg.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[2] (./gvv_ard_sevenseg.aux) ) 
 Here is how much of TeX's memory you used:
  17225 strings out of 494848
  321708 string characters out of 6179105
- 367233 words of memory out of 5000000
+ 368233 words of memory out of 5000000
  20210 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,12n,54p,508b,1062s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_sevenseg.dvi (2 pages, 28640 bytes).
+Output written on gvv_ard_sevenseg.dvi (2 pages, 28724 bytes).

@@ -343,6 +343,20 @@ see the led beside pin 13 light up.
 ldi r17,0b00000000
 \end{lstlisting}
 Save and execute.  The led should turn off.
+\item What do the following instructions do?
+\begin{lstlisting}
+ldi r16,0b00100000
+out DDRB,r16
+\end{lstlisting}
+\solution The Atmega328p microcontroller for the arduino board has 32 internal 8-bit registers, R0-R31. R16-R31 can be used directly for i/o.  The first instruction loads an 8-bit binary number into  R16. The second instruction loads the value in R16 to the DDRB register.  Each bit of the DDRB register corresponds to a pin on the arduino. The second instruction declares pin 13 to be an output port. Both the instructions are equivalent to  pinMode(13, OUTPUT).  
+\item What do the following instructions do?
+\begin{lstlisting}
+  ldi r17,0b00100000
+  out PortB,r17
+\end{lstlisting}
+\solution The instructions are equivalent to digitalWrite(13).
+
+
 \end{enumerate}
 
 \end{document}
