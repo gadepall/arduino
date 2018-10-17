@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  17 OCT 2018 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  17 OCT 2018 18:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**gvv_ard_assembly_sevenseg.tex
-(./gvv_ard_assembly_sevenseg.tex
+**gvv_ard_assembly_7447.tex
+(./gvv_ard_assembly_7447.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -751,8 +751,8 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (./gvv_ard_assembly_sevenseg.aux)
-\openout1 = `gvv_ard_assembly_sevenseg.aux'.
+))) (./gvv_ard_assembly_7447.aux)
+\openout1 = `gvv_ard_assembly_7447.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 101.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 101
@@ -826,9 +826,7 @@ ABD: EveryShipout initializing macros
 \c@example=\count159
 \c@definition=\count160
 \c@rem=\count161
-File: iith_logo.eps Graphic file (type eps)
- <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 268.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 268.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 268.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -858,21 +856,9 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 268.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-File: ee_nrc.eps Graphic file (type eps)
- <ee_nrc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 268.
-File: iith_logo.eps Graphic file (type eps)
-
-<iith_logo.eps>
-File: ee_nrc.eps Graphic file (type eps)
- <ee_nrc.eps>
-File: iith_logo.eps Graphic file (type eps)
- <iith_logo.eps>
-File: ee_nrc.eps Graphic file (type eps)
- <ee_nrc.eps>
-(./gvv_ard_assembly_sevenseg.toc)
+(./gvv_ard_assembly_7447.toc)
 \tf@toc=\write4
-\openout4 = `gvv_ard_assembly_sevenseg.toc'.
+\openout4 = `gvv_ard_assembly_7447.toc'.
 
  (./figs/components.tex
 \gnumericTableWidth=\skip67
@@ -881,34 +867,37 @@ File: ee_nrc.eps Graphic file (type eps)
 \gnumericColA=\skip70
 \gnumericColB=\skip71
 \gnumericColC=\skip72
-) (./figs/pinmap.tex)
-File: ./figs/Atmega168PinMap2.eps Graphic file (type eps)
 
-<./figs/Atmega168PinMap2.eps>
+Overfull \hbox (12.4015pt too wide) in paragraph at lines 152--248
+[][] 
+ []
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./figs/ass_arduinoport.tex
-\gnumericColD=\skip73
-\gnumericColE=\skip74
-\gnumericColF=\skip75
-\gnumericColG=\skip76
-\gnumericColH=\skip77
 )
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Reference `table:7447_ard' on page 1 undefined on input line 289
+.
 
-[1
+(./figs/7447_ard.tex
+\gnumericColD=\skip73
+\gnumericColE=\skip74
+) [1
 
 
-] (./gvv_ard_assembly_sevenseg.aux) ) 
+] (./gvv_ard_assembly_7447.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 16771 strings out of 494848
- 313386 string characters out of 6179105
- 360449 words of memory out of 5000000
- 19770 multiletter control sequences out of 15000+600000
- 73426 words of font info for 186 fonts, out of 8000000 for 9000
+ 16448 strings out of 494848
+ 310349 string characters out of 6179105
+ 352449 words of memory out of 5000000
+ 19454 multiletter control sequences out of 15000+600000
+ 60929 words of font info for 145 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,14n,54p,406b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,12n,54p,402b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_assembly_sevenseg.dvi (1 page, 12040 bytes).
+Output written on gvv_ard_assembly_7447.dvi (1 page, 8948 bytes).

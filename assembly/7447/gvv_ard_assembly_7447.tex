@@ -31,11 +31,11 @@
 \usepackage{multirow}
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
-\usepackage{enumitem}
+\usepackage{enumerate}
 \usepackage{mathtools}
-\usepackage{iithtlc}
+\usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{hyperref}
+\usepackage{listings}
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -49,8 +49,6 @@
     \usepackage{lscape}     
 
 \usepackage{tikz}
-\usepackage{url}
-\def\UrlBreaks{\do\/\do-}
 
 %\usepackage{stmaryrd}
 
@@ -196,9 +194,9 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{ 
-	\logo{
-Boolean Logic through 7447
-		}
+%	\logo{
+7447 through AVR-Assembly
+%		}
 }
 
 
@@ -271,134 +269,38 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \tableofcontents
 
-\IEEEpeerreviewmaketitle
 
-
-%\newpage
-%\section{Component Pin Diagrams}
-%%
 %\input{chapter1}
 %
 \begin{abstract}
-This manual shows how to use the 7447 BCD-Seven Segment Display decoder to learn Boolean logic.
+This manual shows how to program the 7447 BCD-Seven segment
+display decoder through AVR-Assembly.
 \end{abstract}
 %\newpage
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
 \section{Components}
-\begin{table}[!h]
-\centering
 \input{./figs/components.tex}
-\caption{}
-\label{table:components}
-\end{table}
-\section{Hardware}
-\begin{problem}
-Make connections between the seven segment display in Fig. \ref{fig:sevenseg} and the  7447 IC in Fig. \ref{fig:7447} as shown in Table \ref{table:7447_disp}
-\end{problem}
+
+\section{Controlling the Display}
 %
-\begin{table}[!h]
-\centering
-\input{./figs/7447_disp.tex}
-\caption{}
-\label{table:7447_disp}
-\end{table}
-\begin{figure}[!h]
-\begin{center}
-\resizebox {0.5\columnwidth} {!} {
-\input{./figs/sevenseg.tex}
-}
-\end{center}
-\caption{}
-\label{fig:sevenseg}
-\end{figure}
-\begin{problem}
-Make connections to the lower pins of the 7447 according to
-Table \ref{table:bin2dec} and connect $V_{CC} = 5$V. You should see the number 0 displayed for 0000 and 1 for 0001.
-\end{problem}
+\begin{enumerate}[1.]
+\item Connect the 7447 IC to the seven segment display.
+\item Make connections between the 7447 and the arduino according to Table \ref{table:7447_ard}
 %
-\begin{table}[!h]
-\centering
-\input{./figs/bin2dec.tex}
-\caption{}
-\label{table:bin2dec}
-\end{table}
-%
-\begin{figure}[!h]
-\begin{center}
-\resizebox {\columnwidth} {!} {
-\input{./figs/7447.tex}
-}
-\end{center}
-\caption{}
-\label{fig:7447}
-\end{figure}
-%
-\begin{problem}
-Complete Table \ref{table:bin2dec} by generating all numbers between 0-9.
-\end{problem}
-\section{Software}
-\begin{problem}
-Now make the connections as per Table \ref{table:7447_ard}  and execute the following program after downloading
-\begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/gvv_ard_7447/gvv_ard_7447.ino
-\end{lstlisting}
-\end{problem}
 \begin{table}[!h]
 \centering
 \input{./figs/7447_ard.tex}
 \caption{}
 \label{table:7447_ard}
 \end{table}
-In the  truth table in Table \ref{table:counter_decoder},  $W,X,Y,Z$ are the inputs
-and $A,B,C,D$ are the outputs. This table represents the system that increments the numbers 0-8 by 1 and resets the number 9 to 0
-%
-Note that  $D = 1$ for the inputs $0111$ and $1000$.  Using {\em boolean} logic,
-%
-\begin{equation}
-\label{bool_logic}
-D = WXYZ^{'} + W^{'}X^{'}Y^{'}Z
-\end{equation}
-%
-Note that $0111$ results in the expression $WXYZ^{'}$ and $1000$ yields $W^{'}X^{'}Y^{'}Z$. 
-%
-\begin{problem}
-The code below realizes the Boolean logic for B, C and D in  Table \ref{table:counter_decoder}.  Write the logic for A and verify.
+\item Execute the following program.  The number 5 will be displayed.
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/inc_dec/inc_dec.ino
+
 \end{lstlisting}
- \end{problem}
-\input{./figs/counter_decoder.tex}
-\begin{problem}
-Now make additional connections as shown in Table \ref{table:ip_7447_ard} and execute the following code.  Comment.
-\begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/arduino/master/7447/codes/ip_inc_dec/ip_inc_dec.ino
-\end{lstlisting}
-\end{problem}
-\solution
-In this exercise, we are taking the number 5 as input to the arduino and displaying it on the seven segment display using the 7447 IC.
-\begin{table}[!h]
-\centering
-\input{./figs/ip_7447_ard.tex}
-\caption{}
-\label{table:ip_7447_ard}
-\end{table}
-\begin{problem}
-Verify the above code for all inputs from 0-9.
-\end{problem}
-\begin{problem}
-Now write a program where 
-\begin{enumerate}
-\item the binary inputs are given by
-connecting to 0 and 1 on the breadboard
-\item incremented by 1 using Table \ref{table:counter_decoder} and
-\item the incremented value is displayed on the seven segment display.
+\item Now generate the numbers 0-9 by modifying the above program.
 \end{enumerate}
-\end{problem}
-\begin{problem}
-Write the truth table for the 7447 IC and obtain the corresponding boolean logic equations. 
-\end{problem}
-\begin{problem}
-Implement the 7447 logic in the arudino.  Verify that your arduino now behaves like the 7447 IC.
-\end{problem}
+%
 \end{document}
 
 
