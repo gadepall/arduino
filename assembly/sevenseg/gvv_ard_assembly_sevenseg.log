@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  17 OCT 2018 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  17 OCT 2018 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -889,12 +889,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] (./gvv_ard_assembly_sevenseg.aux) ) 
 Here is how much of TeX's memory you used:
- 16482 strings out of 494848
- 310927 string characters out of 6179105
- 357449 words of memory out of 5000000
- 19483 multiletter control sequences out of 15000+600000
+ 16741 strings out of 494848
+ 312882 string characters out of 6179105
+ 366449 words of memory out of 5000000
+ 19742 multiletter control sequences out of 15000+600000
  66511 words of font info for 164 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,14n,54p,406b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,54p,406b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_assembly_sevenseg.dvi (1 page, 11976 bytes).
+Output written on gvv_ard_assembly_sevenseg.dvi (1 page, 12068 bytes).
