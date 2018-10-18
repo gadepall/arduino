@@ -35,7 +35,8 @@
 \usepackage{mathtools}
 \usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{listings}
+\usepackage{hyperref}
+
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -49,6 +50,8 @@
     \usepackage{lscape}     
 
 \usepackage{tikz}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
 
 %\usepackage{stmaryrd}
 
@@ -147,7 +150,7 @@ columns=fullflexible
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 %\numberwithin{equation}{subsection}
-\numberwithin{equation}{problem}
+\numberwithin{equation}{section}
 %\numberwithin{problem}{subsection}
 %\numberwithin{definition}{subsection}
 \makeatletter
@@ -195,7 +198,7 @@ columns=fullflexible
 
 \title{ 
 	\logo{
-7447 through AVR-Assembly
+Boolean Logic through AVR-Assembly
 		}
 }
 
@@ -281,12 +284,13 @@ display decoder through AVR-Assembly.
 \renewcommand{\thetable}{\theenumi}
 \section{Components}
 \input{./figs/components.tex}
-
-\section{Controlling the Display}
+\section{Boolean Operations}
 %
 \begin{enumerate}[1.]
-\item Connect the 7447 IC to the seven segment display.
-\item Make connections between the 7447 and the arduino according to Table \ref{table:7447_ard}
+\item Verify the AND,OR and XOR operations in assembly using the following code and making pin connections according to Table \ref{table:7447_ard}.
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/7447/count/codes/and_or_xor.asm
+\end{lstlisting}
 %
 \begin{table}[!h]
 \centering
@@ -294,33 +298,41 @@ display decoder through AVR-Assembly.
 \caption{}
 \label{table:7447_ard}
 \end{table}
-\item Execute the following program.  The number 5 will be displayed.
-\begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/7447/io/codes/op_7447.asm
-\end{lstlisting}
-\item Now generate the numbers 0-9 by modifying the above program.
 %
-\item Execute the following program after making the connections in Table \ref{table:ip_7447_ard}.  The number 3 will be displayed. What does the program do?
+\item Suppose R20=0b00000010, R16=0b00000001.  Explain the following routine
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/7447/io/codes/ip_7447.asm
+loopw:	lsl r16			;left shift
+	dec r20			;counter --
+	brne	loopw	;if counter != 0
+	ret
 \end{lstlisting}
+\solution The routine shifts R16 by 2 bits to the left (the count in R20=2).  At the end of the routine, R16=0b00000100.
+\item What do the following instructions do?
+\begin{lstlisting}
+rcall loopw		
+out PORTD,r16		;writing output to pins 2,3,4,5
+\end{lstlisting}
+\solution \textbf{rcall} calls for execution of the \textbf{loopw} routine, which shifts R16 by 2 bits to the left and writes R16 to the display through PORTD.
+\item Use the following  routine for finding the complement of a number.
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/7447/count/codes/complement.asm
+\end{lstlisting}
+\item Write an assembly program for implementing the following equations. Note that ZYXW is the input nibble and DCBA is the output nibble.  Display DCBA on the seven segment display for each input ZYXW from 0-9.
 %
-\begin{table}[!h]
-\centering
-\input{./figs/ip_7447_ard.tex}
-\caption{}
-\label{table:ip_7447_ard}
-\end{table}
-\solution The program reads from pins 10-13 and displays the equivalent decimal value on the display by writing to pins 2-5 of the arduino.
-\item Explain the following instructions
-\begin{lstlisting}
-	ldi r17, 0b11000011 ; identifying input pins 10,11,12,13
-	ldi r17, 0b11111111 ;
-	out PORTB,r17		; 
-	in r17,PINB
-\end{lstlisting}
-\solution First define pins 10,11,12 and 13 as input pins. Then ensure that these pins have the input 1 by default. Load the inputs from the pins in port B (which includes pins 10-13) into R17.
+\begin{align}
+A &= W^{\prime}
+\\
+B &= WX^{\prime} Z^{\prime} + W^{\prime}X
+\\
+C &= WXY^{\prime}+X^{\prime}Y + W^{\prime}Y
+\\
+D &= WXY + W^{\prime}Z
+\end{align}
+%
+\item Repeat the above exercise by getting ZYXW as manual inputs to the arduino from the GND and 5V pins on the breadboard.
+%
 \end{enumerate}
+%
 \end{document}
 
 
