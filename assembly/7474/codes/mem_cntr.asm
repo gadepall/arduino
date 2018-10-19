@@ -1,4 +1,4 @@
-.include "/usr/share/avra/m328Pdef.inc"
+.include "/home/gadepall/m328Pdef.inc"
 ldi r16,0
 out SREG,r16
 ldi r16 ,low(RAMEND)

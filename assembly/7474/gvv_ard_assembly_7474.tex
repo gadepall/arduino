@@ -205,9 +205,9 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{ 
-%	\logo{
-Decade Counter through 7474 and AVR-Assembly
-%		}
+	\logo{
+Decade Counter through  AVR-Assembly
+		}
 }
 
 
@@ -284,14 +284,14 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 %\input{chapter1}
 %
 \begin{abstract}
-This manual shows how to build a decade counter using the 7474 D-Flip Flops through AVR-Assembly.
+This manual shows how to build a decade counter through AVR-Assembly.
 \end{abstract}
 %\newpage
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \section{Components}
 \input{./figs/components.tex}
-\section{Decade Counter}
+\section{Using the 7474 D-Flip Flops}
 \begin{enumerate}
 \item Connect the Arduino, 7447 and the two 7474 ICs according to Table \ref{fig:ff_ard_pin} and Fig. \ref{fig:decade_counter}. 
 \begin{table*}[t]
@@ -319,6 +319,55 @@ Intelligently use the codes in \cite{gvv_ard_assembly_7447,gvv_ard_assembly_7447
 to realize the decade counter in Fig. \ref{fig:decade_counter}.
 \end{enumerate}
 %
+\section{Using Internal Memory and and Loop}
+\begin{enumerate}[1.]
+\item Exectute the following code by connecting the Arduino to 7447 through pins 2,3,4,5. The seven segment display should be connected to 7447.
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/7447/codes/mem_cntr.asm
+\end{lstlisting}
+\item Explain the following instructions
+\begin{lstlisting}
+ldi xl,0x00
+ldi xh,0x01
+ldi r16,0b00000000
+st x,r16
+\end{lstlisting}
+\solution X=R27:R26, Y=R29:R28, and Z=R31:R30 where R27:R26 represents XH:XL. The above instructions load 0b00000000 into
+the memory location X=0x0100.
+\item What does the \textbf{loop\_cnt} routine do?
+\begin{lstlisting}
+ldi r16,0b00000000
+ldi r17,0x09
+loop_cnt:
+inc r16
+inc xl
+st x,r16
+dec r17
+brne loop_cnt
+\end{lstlisting}
+\solution The routine loads the numbers 1-9 in memory locations 0x0101 - 0x0109.
+\item What is happening in the following loop?
+\begin{lstlisting}
+Start:
+ldi r17,0x0A
+clr xl
+loop_inc:
+ldi r16,0b00000010
+ld r0,x
+loopw:
+lsl r0
+dec r16
+brne loopw
+out PORTD,r0
+call wait
+inc xl
+dec r17
+brne loop_inc
+rjmp Start
+\end{lstlisting}
+\solution R17=10 is used as a counter.  The numbers 0-9 from 0x0100-0x0109 are repeatedly loaded into R0 which is used to write to the display with a delay.
+\end{enumerate}
+
 \bibliography{IEEEabrv,gvv_ard_assembly_7474}
 \end{document}
 

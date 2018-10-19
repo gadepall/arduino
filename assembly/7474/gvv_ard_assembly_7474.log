@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 12:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1090,7 +1090,9 @@ ABD: EveryShipout initializing macros
 \c@example=\count316
 \c@definition=\count317
 \c@rem=\count318
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 279.
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 279.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 279.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1120,6 +1122,18 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 279.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 279.
+File: iith_logo.eps Graphic file (type eps)
+
+<iith_logo.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
 (./gvv_ard_assembly_7474.toc)
 \tf@toc=\write5
 \openout5 = `gvv_ard_assembly_7474.toc'.
@@ -1160,17 +1174,22 @@ LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./gvv_ard_assembly_7474.bbl) [1
+[1
 
 
-] [2] (./gvv_ard_assembly_7474.aux) ) 
+]
+Underfull \hbox (badness 10000) in paragraph at lines 335--337
+\OT1/txr/bx/n/12 Solution: \OT1/txr/m/n/12 X=R27:R26, Y=R29:R28, and
+ []
+
+(./gvv_ard_assembly_7474.bbl) [2] (./gvv_ard_assembly_7474.aux) ) 
 Here is how much of TeX's memory you used:
- 32325 strings out of 494848
- 705721 string characters out of 6179105
- 835948 words of memory out of 5000000
- 35241 multiletter control sequences out of 15000+600000
- 593308 words of font info for 173 fonts, out of 8000000 for 9000
+ 32616 strings out of 494848
+ 708195 string characters out of 6179105
+ 891948 words of memory out of 5000000
+ 35529 multiletter control sequences out of 15000+600000
+ 600223 words of font info for 195 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,13n,58p,10389b,1024s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,13n,58p,10389b,1675s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_assembly_7474.dvi (2 pages, 27032 bytes).
+Output written on gvv_ard_assembly_7474.dvi (2 pages, 32080 bytes).

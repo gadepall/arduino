@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1151,7 +1151,7 @@ Overfull \hbox (12.4015pt too wide) in paragraph at lines 152--208
  []
 
 )
-Underfull \hbox (badness 3179) in paragraph at lines 298--299
+Underfull \hbox (badness 3179) in paragraph at lines 299--300
 \OT1/txr/m/n/12 quency of the At-mega328p is 16 MHz.
  []
 
@@ -1172,6 +1172,6 @@ Here is how much of TeX's memory you used:
  35233 multiletter control sequences out of 15000+600000
  594476 words of font info for 175 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,8n,54p,10390b,1068s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,54p,10390b,1081s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_assembly_timer.dvi (2 pages, 15616 bytes).
+Output written on gvv_ard_assembly_timer.dvi (2 pages, 15680 bytes).

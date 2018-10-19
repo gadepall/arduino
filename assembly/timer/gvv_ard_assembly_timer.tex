@@ -268,6 +268,7 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \tableofcontents
 
+\bigskip
 
 %\input{chapter1}
 %
@@ -279,7 +280,7 @@ This manual shows how to use the Atmega328p timer to blink the builtin led with 
 \renewcommand{\thetable}{\theenumi}
 \section{Components}
 \input{./figs/components.tex}
-\section{Blink}
+\section{Blink through TIMER}
 \begin{enumerate}
 \item Connect the Arduino to the computer and execute the following code
 \begin{lstlisting}
@@ -330,7 +331,7 @@ delay &= \frac{CLK}{lp2\times PAUSE} seconds
 \end{enumerate}
 %
 \section{Blink through Cycle Delays}
-\begin{enumerate}
+\begin{enumerate}[1.]
 \item Connect pin 8 of the Arduino to an led and execute the following code
 \begin{lstlisting}
 wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/timer/codes/cycle_delay.asm
