@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 10:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**gvv_ard_assembly_7474.tex
-(./gvv_ard_assembly_7474.tex
+**gvv_ard_assembly_timer.tex
+(./gvv_ard_assembly_timer.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -1015,8 +1015,8 @@ File: tikzlibrarymatrix.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.4)
 . 
 . Defining command \implicantcorner with sig. 'O{0}' on line 634.
 .................................................
-) (./gvv_ard_assembly_7474.aux)
-\openout1 = `gvv_ard_assembly_7474.aux'.
+) (./gvv_ard_assembly_timer.aux)
+\openout1 = `gvv_ard_assembly_timer.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 112.
 LaTeX Font Info:    Try loading font information for OML+txmi on input line 112
@@ -1090,39 +1090,53 @@ ABD: EveryShipout initializing macros
 \c@example=\count316
 \c@definition=\count317
 \c@rem=\count318
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 279.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 279.
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 267.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 267.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 279.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 279.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 279.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 279.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 267.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-(./gvv_ard_assembly_7474.toc)
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 267.
+File: iith_logo.eps Graphic file (type eps)
+
+<iith_logo.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+(./gvv_ard_assembly_timer.toc)
 \tf@toc=\write5
-\openout5 = `gvv_ard_assembly_7474.toc'.
+\openout5 = `gvv_ard_assembly_timer.toc'.
 
  (./figs/components.tex
 \gnumericTableWidth=\skip73
@@ -1131,46 +1145,33 @@ File: utxsyc.fd 2000/12/15 v3.1
 \gnumericColA=\skip76
 \gnumericColB=\skip77
 \gnumericColC=\skip78
-) (./figs/ff_ard_pin.tex
-\gnumericColD=\skip79
-\gnumericColE=\skip80
-\gnumericColF=\skip81
-\gnumericColG=\skip82
-\gnumericColH=\skip83
-\gnumericColI=\skip84
-\gnumericColJ=\skip85
-\gnumericColK=\skip86
-\gnumericColL=\skip87
-\gnumericColM=\skip88
-\gnumericColN=\skip89
-\gnumericColO=\skip90
-)
-(./figs/decade_counter.tex
-Overfull \hbox (3.98401pt too wide) in paragraph at lines 49--49
- [][][]\OT1/txr/m/n/12 Incrementing 
+
+Overfull \hbox (12.4015pt too wide) in paragraph at lines 152--208
+[][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 66.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 66.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./gvv_ard_assembly_7474.bbl) [1
+Underfull \hbox (badness 3179) in paragraph at lines 298--299
+\OT1/txr/m/n/12 quency of the At-mega328p is 16 MHz.
+ []
 
 
-] [2] (./gvv_ard_assembly_7474.aux) ) 
+Underfull \vbox (badness 2384) has occurred while \output is active []
+
+ [1
+
+
+]
+[2
+
+] (./gvv_ard_assembly_timer.aux) ) 
 Here is how much of TeX's memory you used:
- 32325 strings out of 494848
- 705721 string characters out of 6179105
- 835948 words of memory out of 5000000
- 35241 multiletter control sequences out of 15000+600000
- 593308 words of font info for 173 fonts, out of 8000000 for 9000
+ 32307 strings out of 494848
+ 702441 string characters out of 6179105
+ 871950 words of memory out of 5000000
+ 35232 multiletter control sequences out of 15000+600000
+ 594476 words of font info for 175 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,13n,58p,10389b,1024s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,54p,10390b,1068s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_ard_assembly_7474.dvi (2 pages, 27032 bytes).
+Output written on gvv_ard_assembly_timer.dvi (2 pages, 12452 bytes).

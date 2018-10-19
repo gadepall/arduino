@@ -205,26 +205,14 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{ 
-%	\logo{
-Decade Counter through 7474 and AVR-Assembly
-%		}
+	\logo{
+Blink LED through AVR-Assembly
+		}
 }
 
 
 
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
-%\title{Matrix Analysis through Octave}
-%
-%
-% author names and IEEE memberships
-% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
-% a structure at a ~ so this keeps an author's name from being broken across
-% two lines.
-% use \thanks{} to gain access to the first footnote area
-% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
-% was not built to handle multiple paragraphs
-%
+
 
 \author{G V V Sharma$^{*}$% <-this % stops a space
 \thanks{*The author is with the Department
@@ -284,42 +272,64 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 %\input{chapter1}
 %
 \begin{abstract}
-This manual shows how to build a decade counter using the 7474 D-Flip Flops through AVR-Assembly.
+This manual shows how to use the Atmega328p timer to blink the builtin led with a delay.
 \end{abstract}
 %\newpage
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \section{Components}
 \input{./figs/components.tex}
-\section{Decade Counter}
+\section{Blink}
 \begin{enumerate}
-\item Connect the Arduino, 7447 and the two 7474 ICs according to Table \ref{fig:ff_ard_pin} and Fig. \ref{fig:decade_counter}. 
-\begin{table*}[t]
-%\begin{table}
-\centering
-\input{./figs/ff_ard_pin.tex}
-\caption{}
-\label{fig:ff_ard_pin}
-%\end{table}
-\end{table*}
-%
- \begin{figure}[!h]
-\begin{center}
-\resizebox {\columnwidth} {!} {
-\input{./figs/decade_counter.tex}
-}
-\end{center}
-\caption{}
-\label{fig:decade_counter}
-\end{figure}
-%
-%
-\item 
-Intelligently use the codes in \cite{gvv_ard_assembly_7447,gvv_ard_assembly_7447_count}
-to realize the decade counter in Fig. \ref{fig:decade_counter}.
+\item Connect the Arduino to the computer and execute the following code
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/timer/codes/timer.asm
+\end{lstlisting}
+
+\item Explain the following instruction
+\begin{lstlisting}
+sbi DDRB, 5
+\end{lstlisting}
+\item What do the following instructions do?
+\begin{lstlisting}
+ldi r16, 0b00000101 
+out TCCR0B, r16 
+\end{lstlisting}
+\solution The system clock (SYSCLK) frequency of the Atmega328p is 16 MHz.  TCCR0B is the Timer Counter Control Register.  When 
+\begin{align}
+TCCR0B&=0b101 \\
+\implies CLK &= \frac{SYSCLK}{1024} \\
+&= \frac{16M}{1K} = 16kHz.
+\end{align}
+\item Explain the PAUSE routine.
+\begin{lstlisting}
+ldi r19, 0b01000000 ;times to run the loop = 64 for 1 second delay
+PAUSE:	;this is delay (function)
+lp2:	;loop runs 64 times
+		IN r16, TIFR0 ;tifr is timer interupt flag (8 bit timer runs 256 times)
+		ldi r17, 0b00000010
+		AND r16, r17 ;need second bit
+		BREQ PAUSE 
+		OUT TIFR0, r17	;set tifr flag high
+	dec r19
+	brne lp2
+	ret
+\end{lstlisting}
+\solution TIFR0 is the timer interrupt flag and TIFR0=0bxxxxxx10 after every 256 cycles. PAUSE routine waits till TIFR0=0bxxxxxx10, this checking is done by the AND and BREQ instructions above.  
+\item Explain the lp2 routine.
+\\
+\solution R19 = 64 and is used as a count for lp2. The lp2 routine returns after 64 PAUSE rutines.
+\item What is the blinking delay?
+\\
+\solution The blinking delay is given by
+\begin{align}
+delay &= \frac{CLK}{lp2\times PAUSE} seconds
+\\
+& = \frac{16 \times 1024}{64 \times 256} seconds = 1 second
+\end{align}
 \end{enumerate}
 %
-\bibliography{IEEEabrv,gvv_ard_assembly_7474}
+%\bibliography{IEEEabrv,gvv_ard_assembly_timer}
 \end{document}
 
 
