@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 22:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  19 OCT 2018 22:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1251,7 +1251,9 @@ ABD: EveryShipout initializing macros
 \c@example=\count329
 \c@definition=\count330
 \c@rem=\count331
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 282.
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 282.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 282.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1281,6 +1283,18 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 282.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 282.
+File: iith_logo.eps Graphic file (type eps)
+
+<iith_logo.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
+File: iith_logo.eps Graphic file (type eps)
+ <iith_logo.eps>
+File: ee_nrc.eps Graphic file (type eps)
+ <ee_nrc.eps>
 (./gvv_avrgcc_sevenseg.toc)
 \tf@toc=\write6
 \openout6 = `gvv_avrgcc_sevenseg.toc'.
@@ -1302,27 +1316,26 @@ Underfull \hbox (badness 2790) in paragraph at lines 26--30
 \OT1/txr/m/n/9 play through AVR-Assembly. [On-line]. Avail-
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [1
+) [1
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 308.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 308.
  (./gvv_avrgcc_sevenseg.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 308.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 308.
 Package rerunfilecheck Info: File `gvv_avrgcc_sevenseg.out' has not changed.
 (rerunfilecheck)             Checksum: 4F2C95C2724840B435F1BB52B92760A6;141.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 308.
  ) 
 Here is how much of TeX's memory you used:
- 36149 strings out of 494848
- 763795 string characters out of 6179105
- 908483 words of memory out of 5000000
- 39014 multiletter control sequences out of 15000+600000
- 593308 words of font info for 173 fonts, out of 8000000 for 9000
+ 36441 strings out of 494848
+ 766283 string characters out of 6179105
+ 926483 words of memory out of 5000000
+ 39303 multiletter control sequences out of 15000+600000
+ 600223 words of font info for 195 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
- 55i,11n,77p,10387b,412s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,77p,10387b,1109s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_avrgcc_sevenseg.dvi (1 page, 17588 bytes).
+Output written on gvv_avrgcc_sevenseg.dvi (1 page, 19072 bytes).

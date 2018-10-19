@@ -207,9 +207,9 @@ columns=fullflexible
 \vspace{3cm}
 
 \title{ 
-%	\logo{
+	\logo{
 Seven Segment Display Control through  AVR-GCC
-%		}
+		}
 }
 
 
@@ -296,13 +296,13 @@ This manual shows how to control a seven segment display  using AVR-GCC with ard
 \input{./figs/components.tex}
 %
 \section{Display Control}
-\begin{enumerate}
+\begin{enumerate}[1.]
 \item Connect the arduino to the seven segment display according to \cite{gvv_ard_assembly_sevenseg}.
 \item Execute the following code
 \begin{lstlisting}
-wget https://raw.githubusercontent.com/gadepall/arduino/master/avr-gcc/sevenseg/main.c
+wget https://raw.githubusercontent.com/gadepall/arduino/master/avr-gcc/sevenseg/codes/main.c
 \end{lstlisting}
-
+\item Modify the above code to generate numbers between 0-9.
 \end{enumerate}
 \bibliography{IEEEabrv,gvv_avrgcc_sevenseg}
 \end{document}
