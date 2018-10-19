@@ -329,6 +329,43 @@ delay &= \frac{CLK}{lp2\times PAUSE} seconds
 \end{align}
 \end{enumerate}
 %
+\section{Blink through Cycle Delays}
+\begin{enumerate}
+\item Connect pin 8 of the Arduino to an led and execute the following code
+\begin{lstlisting}
+wget https://raw.githubusercontent.com/gadepall/arduino/master/assembly/timer/codes/cycle_delay.asm
+\end{lstlisting}
+\item Explain how the delay is obained
+\begin{lstlisting}
+    ldi r16,0x50
+    ldi r17,0x00
+    ldi r18,0x00
+
+w0:
+    dec r18
+    brne w0
+    dec r17
+    brne w0
+    dec r16
+    brne w0
+    pop r18
+    pop r17
+    pop r16
+    ret
+\end{lstlisting}
+\solution The w0 loop is executed using the counts in R16=$2^6+2^4 = 80$, R17=R18=$2^8=256$.  Thus 
+\begin{align}
+delay &\approx 80\times256\times256 cycles
+\\
+&= \frac{80\times256\times256 }{2^4 \times 2^20} seconds
+\\
+&=0.3125 seconds
+\end{align}
+The actual time is slightly more since each instruction takes a few cycles to execute. 
+\item Should you use timer delay or cycle delay?
+\\
+\solution Timer delay is an accurate method for giving delays.  Cycle delay is a crude method and should be avoided.  
+\end{enumerate}
 %\bibliography{IEEEabrv,gvv_ard_assembly_timer}
 \end{document}
 
