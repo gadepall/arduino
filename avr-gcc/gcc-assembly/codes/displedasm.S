@@ -11,7 +11,7 @@ disp_led:
 	;shifting LSB in r24 to 6th position
 	LDI R20, 0b00000101	;counter = 5
 	RCALL looplsl		;calling the looplsl routine
-	OUT PORTB,R24		;writing output to pins 13 (PB5)
+	OUT PORTB,R24		;writing output to pin 13 (PB5)
 	POP R24
 	RET
 

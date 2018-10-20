@@ -284,6 +284,8 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \bigskip
 
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
 
 \begin{abstract}
 The objective of this manual is to introduce  the student to the basic features of programming, like conditional statments, loops, function and arrays using embedded C 
@@ -297,7 +299,7 @@ The objective of this manual is to introduce  the student to the basic features 
 \item Connect the seven segment display to the arduino.
 \item Download the following directory.  Note that the C file has to be renamed to \textbf{main.c} before using \textbf{make}.
 \begin{lstlisting}
-wget https://github.com/gadepall/arduino/trunk/avr-gcc/cprog/codes
+svn checkout https://github.com/gadepall/arduino/trunk/avr-gcc/cprog/codes
 \end{lstlisting}
 
 \item If-Else: Run \textbf{ifelse.c} and test for dec=0 and dec=8.

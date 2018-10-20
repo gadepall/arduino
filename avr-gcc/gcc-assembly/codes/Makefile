@@ -7,7 +7,7 @@
 MCU = atmega328p
 F_CPU=16000000
 FORMAT = ihex
-TARGET = blink
+TARGET = main
 #TARGET = count
 SRC = $(TARGET).c
 #ASRC = initasm.S 

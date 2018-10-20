@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  20 OCT 2018 07:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  20 OCT 2018 08:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1310,22 +1310,26 @@ File: ee_nrc.eps Graphic file (type eps)
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 313.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 313.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 315.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 315.
  (./gvv_avrgcc_cprog.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 313.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 313.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 315.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 315.
 Package rerunfilecheck Info: File `gvv_avrgcc_cprog.out' has not changed.
 (rerunfilecheck)             Checksum: 6F89F426E794820273A5A0E6C207B961;93.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 313.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 315.
  ) 
 Here is how much of TeX's memory you used:
  36409 strings out of 494848
  765748 string characters out of 6179105
- 921476 words of memory out of 5000000
+ 922477 words of memory out of 5000000
  39274 multiletter control sequences out of 15000+600000
  594476 words of font info for 175 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,11n,77p,10384b,1109s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_avrgcc_cprog.dvi (1 page, 14540 bytes).
+Output written on gvv_avrgcc_cprog.dvi (1 page, 14560 bytes).

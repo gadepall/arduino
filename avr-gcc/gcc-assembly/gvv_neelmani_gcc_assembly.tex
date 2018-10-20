@@ -4,7 +4,7 @@
 \usepackage{gensymb}
 \usepackage{xcolor}
 \usepackage{caption}
-\usepackage{url}
+\usepackage[hyphens,spaces,obeyspaces]{url}
 %\usepackage{subcaption}
 %\doublespacing
 \singlespacing
@@ -32,11 +32,12 @@
 \usepackage{multirow}
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
-\usepackage{enumitem}
+\usepackage{enumerate}
 \usepackage{mathtools}
-
+\usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{listings}
+\usepackage[breaklinks]{hyperref}
+%\usepackage{breakcites}
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -49,10 +50,18 @@
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
 
-
-\usepackage{iithtlc}
 \usepackage{tikz}
 \usepackage{circuitikz}
+\usepackage{karnaugh-map}
+\usepackage{pgf}
+\usepackage[hyphenbreaks]{breakurl}
+
+%\usepackage{url}
+%\def\UrlBreaks{\do\/\do-}
+
+
+
+
 
 %\usepackage{stmaryrd}
 
@@ -72,11 +81,11 @@
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-\lstset{
-language=C,
-frame=single, 
-breaklines=true
-}
+%\lstset{
+%language=C,
+%frame=single, 
+%breaklines=true
+%}
 
 %\lstset{
 	%%basicstyle=\small\ttfamily\bfseries,
@@ -95,9 +104,10 @@ breaklines=true
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
-breaklines=true
+breaklines=true,
+columns=fullflexible
 }
  
 
@@ -150,7 +160,7 @@ breaklines=true
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 %\numberwithin{equation}{subsection}
-\numberwithin{equation}{problem}
+\numberwithin{equation}{section}
 %\numberwithin{problem}{subsection}
 %\numberwithin{definition}{subsection}
 \makeatletter
@@ -168,20 +178,20 @@ breaklines=true
 %\numberwithin{equation}{section}
 %%\numberwithin{equation}{problem}
 %%\numberwithin{problem}{subsection}
-%\numberwithin{problem}{section}
+\numberwithin{problem}{section}
 %%\numberwithin{definition}{subsection}
 %\makeatletter
 %\@addtoreset{figure}{problem}
 %\makeatother
-%\makeatletter
-%\@addtoreset{table}{problem}
-%\makeatother
+\makeatletter
+\@addtoreset{table}{problem}
+\makeatother
 
-%\let\StandardTheFigure\thefigure
-%\let\StandardTheTable\thetable
+\let\StandardTheFigure\thefigure
+\let\StandardTheTable\thetable
 %%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 %\renewcommand{\thefigure}{\theproblem}
-%\renewcommand{\thetable}{\theproblem}
+\renewcommand{\thetable}{\theproblem}
 %%\numberwithin{figure}{section}
 
 %%\numberwithin{figure}{subsection}
@@ -202,20 +212,6 @@ Mixing C and Assembly with Arduino
 	}
 }
 
-
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
-%\title{Matrix Analysis through Octave}
-%
-%
-% author names and IEEE memberships
-% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
-% a structure at a ~ so this keeps an author's name from being broken across
-% two lines.
-% use \thanks{} to gain access to the first footnote area
-% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
-% was not built to handle multiple paragraphs
-%
 
 \author{Neelmani Gautam and G V V Sharma$^{*}$ %<-this  stops a space
 \thanks{Neelmani is an undergraduate student at IIT Bhilai. email:neelmanig@iitbhilai.ac.in.  *The author is with the Department
@@ -242,99 +238,14 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 % this is a minor point as most people would not even notice if the said evil
 % space somehow managed to creep in.
 
-
-
-% The paper headers
-%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
-%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
-% The only time the second header will appear is for the odd numbered pages
-% after the title page when using the twoside option.
-% 
-% *** Note that you probably will NOT want to include the author's ***
-% *** name in the headers of peer review papers.                   ***
-% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
-% you desire.
-
-
-
-
-% If you want to put a publisher's ID mark on the page you can do it like
-% this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
-% Remember, if you use this you must call \IEEEpubidadjcol in the second
-% column for its text to clear the IEEEpubid mark.
-
-
-
-% make the title area
 \maketitle
 
-%\newpage
+\tableofcontents
 
-%\tableofcontents
+\bigskip
 
-
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%Cooperative diversity, decode and forward, piecewise linear
-%\end{IEEEkeywords}
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-\IEEEpeerreviewmaketitle
-
-
-%\documentclass{article}
-%\usepackage[utf8]{inputenc}
-%\usepackage{listings}
-%\usepackage{graphicx}
-
-%\usepackage{color}
-%\definecolor{codegreen}{rgb}{0,0.6,0}
-%\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-%\definecolor{codepurple}{rgb}{0.58,0,0.82}
-%\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-%\lstdefinestyle{mystyle}{
-    %backgroundcolor=\color{backcolour},   
-    %commentstyle=\color{codegreen},
-    %keywordstyle=\color{magenta},
-    %numberstyle=\tiny\color{codegray},
-    %stringstyle=\color{codepurple},
-    %basicstyle=\footnotesize,
-    %breakatwhitespace=false,         
-    %breaklines=true,                 
-    %captionpos=b,                    
-    %keepspaces=true,                 
-    %numbers=left,                    
-    %numbersep=5pt,                  
-    %showspaces=false,                
-    %showstringspaces=false,
-    %showtabs=false,                  
-    %tabsize=2
-%}
- 
-%\lstset{style=mystyle}
-
-
-%\title{Analog Design Through Arduino}
-%\author{G V V Sharma* }
-
-%\begin{document}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
 
 %\maketitle
 \begin{abstract}
@@ -344,139 +255,27 @@ This manual shows how write a function in assembly and call it in a C program wh
 \end{abstract}
 \section{Components}
 \input{./figs/components.tex}
-%\section{Measuring the resistance}
-%\begin{problem}
-%Connect the 5V pin of the Arduino to an extreme pin of the Breadboard shown in Fig. \ref{fig:breadboard}.  Let this pin be $V_{cc}$.
-%\end{problem}
-%%
-%\begin{problem}
-%Connect the GND pin of the Arduino to the opposite extreme pin of the Breadboard.
-%\end{problem}
-%%
-%%
-%\begin{problem}
-%Let $R_1$ be the known resistor and $R_2$ be the unknown resistor.  Connect $R_1$ and $R_2$ in series such that $R_1$ is connected
-%to GND and $R_2$ is connected to $V_{cc}$. Refer to Fig. \ref{fig:voltage_divider}
-%\end{problem}
-%%
-%%
-%\begin{figure}
-%\centering
-%%\includegraphics[width=\columnwidth]{./figs/voltage_divider.eps}
-%\resizebox {\columnwidth} {!} {
-%%\input{./figs/collpits.tex}
-%\input{./figs/vrr.tex}
-%}
-%%\input{./figs/vrr.tex}
-%%\includegraphics[width=\columnwidth]{./figs/voltage_divider.eps}
-%\caption{Voltage Divider}
-%\label{fig:voltage_divider}
-%\end{figure}
-%%
 %
-%\begin{problem}
-%Connect the junction between the two resistors to  the A0 pin on the Arduino.
-%\end{problem}
-%%
-%\begin{problem}
-%Connect the arduino to the computer so that it is powered.
-%\end{problem}
-%%
-%\begin{problem}
-%Open the Arduino IDE and type the following code.  Open the {\em serial monitor} to view the output.
-%\end{problem}
-%%
-%\lstinputlisting{./codes/resistance/resistance.ino}
-\section{LED control}
-\begin{problem}
-Connect \textbf{pin 13}  of the Arduino to an LED through the resistor.
-\end{problem}
-\begin{problem}
-Download the \textbf{Makefile} from 
+\section{GCC with Assembly}
+\begin{enumerate}[1.]
+\item Download the following folder and execute \textbf{main.c}
 \begin{lstlisting}
-https://github.com/gadepall/EE2110/blob/master/gcc_assembly/codes/blink/Makefile
+svn checkout https://github.com/gadepall/arduino/trunk/avr-gcc/gcc-assembly/codes
 \end{lstlisting}
-
-\end{problem}
-\begin{problem}
-\label{prob:avrgcc}
-Write a C program for turning an LED on/off using AVR-GCC.
-\end{problem}
-\solution Save the following code in a file called \textbf{onoffavr.c}.  
-\lstinputlisting{./codes/blink/onoffavr.c}
-\begin{problem}
-Suitably modify the \textbf{Makefile} to run the above code.
-\end{problem}
-\solution
-In the \textbf{Makefile}, make the following changes.
-\begin{lstlisting}
-TARGET = onoffavr
-ASRC =   
-\end{lstlisting}
-%
-\begin{problem}
-Run \textbf{make} in the terminal to turn the LED on.
-\end{problem}
-\begin{problem}
-Modify Problem \ref{prob:avrgcc} to turn the LED off.
-\end{problem}
-
-\subsection{GCC with Assembly}
-\begin{problem}
-Write the \textbf{init} function as an assembly routine that can be called in the C program.
-\end{problem}
-\solution Save the following code in a file called \textbf{initasm.S}.  It is important that I/O (e.g. PORTB) registers be typed in capital letters.
-\lstinputlisting{./codes/blink/initasm.S}
-%
-\begin{problem}
-\label{prob:gcc-asm}
-Modify the C program in Problem. \ref{prob:avrgcc} to call the  \textbf{init()} function from  \textbf{initasm.S}. Save it as \textbf{onoff.c}.
-\end{problem}
-\solution
-\lstinputlisting{./codes/blink/onoff.c}
-\begin{problem}
-Modify the \textbf{Makefile} for linking the C and assembly code above and execute the program.
-\end{problem}
-\solution
-\begin{lstlisting}
-TARGET = onoff
-ASRC =   initasm.S
-\end{lstlisting}
-\section{Two Assembly Routines}
-\begin{problem}
-Modify the C program in Problem. \ref{prob:gcc-asm} to include a function for displaying the output.  Name this file as \textbf{onoff2.c}
-\end{problem}
-\solution
-\lstinputlisting{./codes/blink/onoff2.c}
-\begin{problem}
-Write an assembly routine for displaying output through pin 13.
-\end{problem}
-\solution
-\lstinputlisting{./codes/blink/displedasm.S}
-\begin{problem}
-Modify the \textbf{Makefile} for linking \textbf{onoff2.c, initasm.S} and  \textbf{displedasm.S} and execute the program.
-\end{problem}
-\solution
-\begin{lstlisting}
-TARGET = onoff
-ASRC =   initasm.S displedasm.S
-\end{lstlisting}
-%
-\begin{problem}
-Explain how the \textbf{disp\_led(0)} function in \textbf{onoff2.c} is related to \textbf{Register R24} in \textbf{disp\_led} routine in \textbf{displedasm.S}.
-\end{problem}
+\item Modify \textbf{main.c} and \textbf{Makefile} to turn the builtin led on.
+\item Repeat the above exercise to turn the LED off.
+\item Explain how the \textbf{disp\_led(0)} function is related to \textbf{Register R24} in \textbf{disp\_led} routine in \textbf{displedasm.S}.
 \solution The function argument 0 in \textbf{disp\_led(0)} is passed on to R24 in the assembly routine for further operations.  Also, the registers R18-R24 are available for storing more function arguments according to the Table \ref{table:param_pass}.  More details are avilable in official ATMEL AT1886 reference.
+\begin{table}[!h]
+\centering
 \input{./figs/param_pass.tex}
-\section{Blink}
-\begin{problem}
-Modify your codes for blinking an LED using the following routine for the delay.
-\end{problem}
-\lstinputlisting{./codes/blink/delayasm.S}
-%\section{Decade Counter on a Seven Segment Display}
-%\begin{problem}
-%Write an assembly routine for the pin configuration in Table \ref{fig:arduino_atmega_pin_map}
-%\end{problem}
+\caption{Relationship between Register in assembly and function argument in C}
+\label{table:param_pass}
+\end{table}
 
+\item Write an assembly routine for controlling the seven segment display and call it in a C program.
+\item Build a decade counter with \textbf{main.c} calling all functions from assembly routines.
+\end{enumerate}
 
 \end{document}
 
