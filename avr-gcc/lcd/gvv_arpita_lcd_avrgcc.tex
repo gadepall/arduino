@@ -4,6 +4,7 @@
 \usepackage{gensymb}
 \usepackage{xcolor}
 \usepackage{caption}
+\usepackage[hyphens,spaces,obeyspaces]{url}
 %\usepackage{subcaption}
 %\doublespacing
 \singlespacing
@@ -31,11 +32,12 @@
 \usepackage{multirow}
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
-\usepackage{enumitem}
+\usepackage{enumerate}
 \usepackage{mathtools}
-
+\usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{listings}
+\usepackage[breaklinks]{hyperref}
+%\usepackage{breakcites}
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -48,10 +50,18 @@
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
 
-
-\usepackage{iithtlc}
 \usepackage{tikz}
 \usepackage{circuitikz}
+\usepackage{karnaugh-map}
+\usepackage{pgf}
+\usepackage[hyphenbreaks]{breakurl}
+
+%\usepackage{url}
+%\def\UrlBreaks{\do\/\do-}
+
+
+
+
 
 %\usepackage{stmaryrd}
 
@@ -71,11 +81,11 @@
 % correct bad hyphenation here
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-\lstset{
-language=C,
-frame=single, 
-breaklines=true
-}
+%\lstset{
+%language=C,
+%frame=single, 
+%breaklines=true
+%}
 
 %\lstset{
 	%%basicstyle=\small\ttfamily\bfseries,
@@ -94,9 +104,10 @@ breaklines=true
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
-breaklines=true
+breaklines=true,
+columns=fullflexible
 }
  
 
@@ -149,7 +160,7 @@ breaklines=true
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 %\numberwithin{equation}{subsection}
-\numberwithin{equation}{problem}
+\numberwithin{equation}{section}
 %\numberwithin{problem}{subsection}
 %\numberwithin{definition}{subsection}
 \makeatletter
@@ -167,31 +178,25 @@ breaklines=true
 %\numberwithin{equation}{section}
 %%\numberwithin{equation}{problem}
 %%\numberwithin{problem}{subsection}
-%\numberwithin{problem}{section}
+\numberwithin{problem}{section}
 %%\numberwithin{definition}{subsection}
 %\makeatletter
 %\@addtoreset{figure}{problem}
 %\makeatother
-%\makeatletter
-%\@addtoreset{table}{problem}
-%\makeatother
+\makeatletter
+\@addtoreset{table}{problem}
+\makeatother
 
-%\let\StandardTheFigure\thefigure
-%\let\StandardTheTable\thetable
+\let\StandardTheFigure\thefigure
+\let\StandardTheTable\thetable
 %%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 %\renewcommand{\thefigure}{\theproblem}
-%\renewcommand{\thetable}{\theproblem}
+\renewcommand{\thetable}{\theproblem}
 %%\numberwithin{figure}{section}
 
 %%\numberwithin{figure}{subsection}
 
 
-
-\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
-     \def\rightbox#1{\makebox[0in][r]{#1}}
-     \def\centbox#1{\makebox[0in]{#1}}
-     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
-     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 
 \vspace{3cm}
 
@@ -243,99 +248,16 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 
 
-% The paper headers
-%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
-%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
-% The only time the second header will appear is for the odd numbered pages
-% after the title page when using the twoside option.
-% 
-% *** Note that you probably will NOT want to include the author's ***
-% *** name in the headers of peer review papers.                   ***
-% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
-% you desire.
-
-
-
-
-% If you want to put a publisher's ID mark on the page you can do it like
-% this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
-% Remember, if you use this you must call \IEEEpubidadjcol in the second
-% column for its text to clear the IEEEpubid mark.
-
-
-
-% make the title area
 \maketitle
 
-%\newpage
+\tableofcontents
 
-%\tableofcontents
+\bigskip
 
-
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%Cooperative diversity, decode and forward, piecewise linear
-%\end{IEEEkeywords}
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
 
 
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-\IEEEpeerreviewmaketitle
-
-
-%\documentclass{article}
-%\usepackage[utf8]{inputenc}
-%\usepackage{listings}
-%\usepackage{graphicx}
-
-%\usepackage{color}
-%\definecolor{codegreen}{rgb}{0,0.6,0}
-%\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-%\definecolor{codepurple}{rgb}{0.58,0,0.82}
-%\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
-%\lstdefinestyle{mystyle}{
-    %backgroundcolor=\color{backcolour},   
-    %commentstyle=\color{codegreen},
-    %keywordstyle=\color{magenta},
-    %numberstyle=\tiny\color{codegray},
-    %stringstyle=\color{codepurple},
-    %basicstyle=\footnotesize,
-    %breakatwhitespace=false,         
-    %breaklines=true,                 
-    %captionpos=b,                    
-    %keepspaces=true,                 
-    %numbers=left,                    
-    %numbersep=5pt,                  
-    %showspaces=false,                
-    %showstringspaces=false,
-    %showtabs=false,                  
-    %tabsize=2
-%}
- 
-%\lstset{style=mystyle}
-
-
-%\title{Analog Design Through Arduino}
-%\author{G V V Sharma* }
-
-%\begin{document}
-
-%\maketitle
 \begin{abstract}
 %%\boldmath
 This manual shows how to interface an Arduino to a $16 \times 2$ LCD display using AVR-GCC.  This framework provides a useful platform for displaying the output of AVR-Assembly programs.
@@ -343,107 +265,12 @@ This manual shows how to interface an Arduino to a $16 \times 2$ LCD display usi
 \end{abstract}
 \section{Components}
 \input{./figs/components.tex}
-%\section{Measuring the resistance}
-%\begin{problem}
-%Connect the 5V pin of the Arduino to an extreme pin of the Breadboard shown in Fig. \ref{fig:breadboard}.  Let this pin be $V_{cc}$.
-%\end{problem}
-%%
-%\begin{problem}
-%Connect the GND pin of the Arduino to the opposite extreme pin of the Breadboard.
-%\end{problem}
-%%
-%%
-%\begin{problem}
-%Let $R_1$ be the known resistor and $R_2$ be the unknown resistor.  Connect $R_1$ and $R_2$ in series such that $R_1$ is connected
-%to GND and $R_2$ is connected to $V_{cc}$. Refer to Fig. \ref{fig:voltage_divider}
-%\end{problem}
-%%
-%%
-%\begin{figure}
-%\centering
-%%\includegraphics[width=\columnwidth]{./figs/voltage_divider.eps}
-%\resizebox {\columnwidth} {!} {
-%%\input{./figs/collpits.tex}
-%\input{./figs/vrr.tex}
-%}
-%%\input{./figs/vrr.tex}
-%%\includegraphics[width=\columnwidth]{./figs/voltage_divider.eps}
-%\caption{Voltage Divider}
-%\label{fig:voltage_divider}
-%\end{figure}
-%%
-%
-%\begin{problem}
-%Connect the junction between the two resistors to  the A0 pin on the Arduino.
-%\end{problem}
-%%
-%\begin{problem}
-%Connect the arduino to the computer so that it is powered.
-%\end{problem}
-%%
-%\begin{problem}
-%Open the Arduino IDE and type the following code.  Open the {\em serial monitor} to view the output.
-%\end{problem}
-%%
-%\lstinputlisting{./codes/resistance/resistance.ino}
 %
 \section{Display Number on LCD}
 %
-\begin{problem}
-Plug the LCD in Fig. \ref{fig:lcd} to the breadboard.
-\end{problem}
-%
-
-%
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{./figs/breadboard.eps}
-\caption{Breadboard}
-	\label{fig:breadboard}
-\end{figure}
-%%
-
-%\begin{problem}
-%Connect the 220$\Omega$ resistance from $V_{cc}$ to pin 15 (Led+) of the LCD.
-%\end{problem}
-
-%%
-%\begin{problem}
-%Connect  pin 16 (Led-) of the LCD to GND.  The LCD should glow.
-%\end{problem}
-%%
-%\begin{problem}
-%Connect pin 3 of the LCD to GND.  This is required for contrast.
-%\end{problem}
-\begin{problem}
-Connect the Arduino pins to LCD pins as per Table \ref{table:lcd pins}.
-%\begin{center}
-%\begin{tabular}{ |p{3cm}|p{3cm}|}
- %\hline
- %\multicolumn{2}{|c|}{\textbf{Arduino to LCD Connection}} \\
- %\hline
- %\textbf{Arduino Pins} & \textbf{LCD Pins} \\
- %\hline
- %Pin D2 & Pin D7\\
- %\hline
- %Pin D3 & Pin D6\\
- %\hline
- %Pin D4 & Pin D5\\
- %\hline
- %Pin D5 & Pin D4\\
- %\hline
- %Pin 11 & Pin 6\\
- %\hline
- %Pin 12 & Pin 4\\
- %\hline
- %GND Pin & Pin 1 and Pin 5\\
- %\hline
- %5V  Pin & Pin 2\\
- %\hline
-%\end{tabular}
-%\end{center}
-\end{problem}
-%
+\begin{enumerate}[1.]
+\item Plug the LCD in Fig. \ref{fig:lcd} to the breadboard.
+\item Connect the Arduino pins to LCD pins as per Table \ref{table:lcd pins}.
 %
 \begin{figure}[!h]
 \begin{center}
@@ -454,101 +281,18 @@ Connect the Arduino pins to LCD pins as per Table \ref{table:lcd pins}.
 \caption{LCD}
 \label{fig:lcd}
 \end{figure}
-
 %
-%\begin{figure}
-%\centering
-%\includegraphics[width=\columnwidth]{./figs/lcd.eps}
-%\caption{LCD}
-%\label{fig:lcd}
-%\end{figure}
-%
-
 \input{./figs/table.tex}
-%%
-%\begin{problem}
-%The Potentiometer to LCD connection are given below: 
-%\begin{center}
-%\begin{tabular}{ |p{3cm}|p{3cm}|}
- %\hline
- %\multicolumn{2}{|c|}{\textbf{Potentiometer to LCD Connection}} \\
- %\hline
- %\textbf{Potentiometer} & \textbf{LCD Pins} \\
- %\hline
- %Middle Pin & Pin 3\\
- %\hline
- %Pin 1 & Pin 2(Vcc Pin)\\
- %\hline
- %Pin 3 & Pin 1(GND Pin)\\
- %\hline
-%\end{tabular}
-%\end{center}
-%\end{problem}
-%
-%
-%\begin{problem}
-%The resistance is an analogue function,but the value displayed on LCD is digital function.So,we need to do analogue to digital conversion,Arduino has built-in 10-bit analogue to digital converter.
-%Two resistors are used, one of which is known resistor value and other is unknown resistor value.
-%Take 2 resistors,one known resistor with resistance value(For e.g-1K,2K,10K),here we have taken 1K and another an unknown resistor whose value we are going to calculate.
-%\end{problem}
-%
-%
-\begin{problem}
-Display the number 5 on the LCD
-\end{problem}
-%
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{./figs/Atmega168PinMap2.eps}
-\caption{Arduino-ATMEGA328P pin map.}
-\label{fig:arduino_atmega_pin_map}
-\end{figure}
-%
-
-\solution Download the \textbf{Makefile} and \textbf{main.c} from
+\item Download the  following directory from
 %
 \begin{lstlisting}
-https://github.com/gadepall/EE2110/blob/master/lcd/codes/Makefile	
-https://github.com/gadepall/EE2110/blob/master/lcd/codes/main.c
+svn checkout https://github.com/gadepall/arduino/trunk/avr-gcc/lcd/codes
 \end{lstlisting}
-and execute in the terminal by typing \textbf{make}.
-%\lstinputlisting{./codes/lcd_disp.c}
-\begin{problem}
-Modify the above code so that the numbers from 0 to 9 are displayed repeatedly.
-\end{problem}
-\solution Replace LCD\_Integer(5) by the following code.
-\lstinputlisting{./codes/lcd_disp_loop.c}
-%\section{Explanation}
+and execute \textbf{main.c}
+\item Modify the above code to obtain a decayed counter so that the numbers from 0 to 9 are displayed on the lcd repeatedly.
+\item Write assembly routines for driving the lcd.
+\end{enumerate}
 %
-%
-%
-%\begin{enumerate}
-%
-%
-%\item We create a variable called analogPin and assign it to 0. 
-%This is because the voltage value we are going to read is connected to analogPin A0.
-%
-%
-%
-%\item  The 10-bit ADC can differentiate 1024 discrete voltage levels, 5 volt is applied to 2 resistors and the voltage sample is taken in between the resistors. The value which we get from analogPin can be between 0 and 1023. 0 would represent 0 volts falls across the unknown resistor. A value of 1023 would mean that practically all 5 volts falls across the unknown resistor.
-%
-%
-%
-%\item  $V_{out}$ represents the divided voltage that falls across the unknown resistor.
-%
-%
-%
-%\item  The Ohm meter in this manual works on the principle of the voltage divider shown in Fig. \ref{fig:voltage_divider}.
-%%
-%\begin{align}
-%V_{out}&=\frac{R_1}{R_1+R_2}V_{in} \\
-%\Rightarrow R_2&=R_1\brak{\frac{V_{in}}{V_{out}}-1}
-%\end{align}
-%%
-%In the above, $V_{in} = 5$V, $R_1 = 220 \Omega$.
-%\end{enumerate}
-
-
 \end{document}
 
 
