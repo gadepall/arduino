@@ -4,6 +4,7 @@
 \usepackage{gensymb}
 \usepackage{xcolor}
 \usepackage{caption}
+\usepackage[hyphens,spaces,obeyspaces]{url}
 %\usepackage{subcaption}
 %\doublespacing
 \singlespacing
@@ -31,11 +32,12 @@
 \usepackage{multirow}
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
-\usepackage{enumitem}
+\usepackage{enumerate}
 \usepackage{mathtools}
-\usepackage{iithtlc}
+\usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{listings}
+\usepackage[breaklinks]{hyperref}
+%\usepackage{breakcites}
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -47,10 +49,16 @@
     \usepackage{ifthen}                                           %%
   %optionally (for landscape tables embedded in another document): %%
     \usepackage{lscape}     
+
 \usepackage{tikz}
 \usepackage{circuitikz}
 \usepackage{karnaugh-map}
 \usepackage{pgf}
+\usepackage[hyphenbreaks]{breakurl}
+
+%\usepackage{url}
+%\def\UrlBreaks{\do\/\do-}
+
 
 
 
@@ -96,9 +104,10 @@
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
-breaklines=true
+breaklines=true,
+columns=fullflexible
 }
  
 
@@ -152,55 +161,47 @@ breaklines=true
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 %\numberwithin{equation}{subsection}
-%\numberwithin{equation}{problem}
+\numberwithin{equation}{section}
 %\numberwithin{problem}{subsection}
+%\numberwithin{definition}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+
+\let\StandardTheFigure\thefigure
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
+
+
+%\numberwithin{figure}{subsection}
+
+%\numberwithin{equation}{subsection}
+%\numberwithin{equation}{section}
+%%\numberwithin{equation}{problem}
+%%\numberwithin{problem}{subsection}
+\numberwithin{problem}{section}
 %%\numberwithin{definition}{subsection}
 %\makeatletter
 %\@addtoreset{figure}{problem}
 %\makeatother
-%
-%\let\StandardTheFigure\thefigure
+\makeatletter
+\@addtoreset{table}{problem}
+\makeatother
+
+\let\StandardTheFigure\thefigure
+\let\StandardTheTable\thetable
 %%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 %\renewcommand{\thefigure}{\theproblem}
-%
-%
+\renewcommand{\thetable}{\theproblem}
+%%\numberwithin{figure}{section}
+
 %%\numberwithin{figure}{subsection}
-%
-%%\numberwithin{equation}{subsection}
-%%\numberwithin{equation}{section}
-%%%\numberwithin{equation}{problem}
-%%%\numberwithin{problem}{subsection}
-%\numberwithin{problem}{section}
-%%%\numberwithin{definition}{subsection}
-%%\makeatletter
-%%\@addtoreset{figure}{problem}
-%%\makeatother
-%\makeatletter
-%\@addtoreset{table}{problem}
-%\makeatother
-%
-%\let\StandardTheFigure\thefigure
-%\let\StandardTheTable\thetable
-%%%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
-%%\renewcommand{\thefigure}{\theproblem}
-%\renewcommand{\thetable}{\theproblem}
-%%%\numberwithin{figure}{section}
-%
-%%%\numberwithin{figure}{subsection}
-%
-
-
-\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
-     \def\rightbox#1{\makebox[0in][r]{#1}}
-     \def\centbox#1{\makebox[0in]{#1}}
-     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
-     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 
 \vspace{3cm}
 
 \title{ 
 	\logo{
-	Karnaugh Map and Finite State Machine
+Finite State Machine
 	}
 }
 
@@ -276,34 +277,14 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \bigskip
 
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
 \begin{abstract}
 %\boldmath
-This manual explains Karnaugh maps (K-map) and state machines by deconstructing a decade counter.
+This manual explains state machines by deconstructing a decade counter.
 \end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%Cooperative diversity, decode and forward, piecewise linear
-%\end{IEEEkeywords}
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
-%
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
-
 
 \section{The Decade Counter}
 The block diagram of a decade counter (repeatedly counts up from 0 to 9)
@@ -318,187 +299,11 @@ the {\em delay} is part of {\em sequential} logic.
 \label{fig:dec_counter}
 \end{figure}
 %
-\section{Incrementing Decoder}
-The incrementing decoder in Fig. \ref{fig:dec_counter}  takes the numbers $0,1,\dots,9$ in binary as inputs and generates
-the consecutive number as output.  The corresponding truth table is available in Fig. \ref{table:counter_decoder}.
-\input{./figs/counter_decoder}
-\section{Karnaugh Map}
-
-%
-Using Boolean logic, output $A$  in Table \ref{table:counter_decoder} can be expressed in terms of the inputs $W,X,Y,Z$ as
-\begin{multline}
-\label{eq:A}
-A = W^{\prime}X^{\prime}Y^{\prime}Z^{\prime} + W^{\prime}XY^{\prime}Z^{\prime}
-+W^{\prime}X^{\prime}YZ^{\prime}
-\\
-+W^{\prime}XYZ^{\prime}
-+W^{\prime}X^{\prime}Y^{\prime}Z
-\end{multline}
-%
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_A}
-}
-\caption{K-map for $A$.}
-\label{fig:kmap_A}
-\end{figure}
-
-\subsection{K-Map for $A$ }
-The expression in \eqref{eq:A}  can be minimized using the K-map in Fig. \ref{fig:kmap_A}.
-In Fig. \ref{fig:kmap_A},  the {\em implicants} in boxes 0,2,4,6 result in $W^{\prime}Z^{\prime}$.  The implicants in
-boxes 0,8 result in $W^{\prime}X^{\prime}Y^{\prime}$.  Thus, after minimization using Fig. \ref{eq:kmap_A},  \eqref{eq:A} can be expressed as
-%
-\begin{equation}
-\label{eq:kmap_A}
-A = W^{\prime}Z^{\prime}+W^{\prime}X^{\prime}Y^{\prime}
-\end{equation}
-%
-\begin{problem}
-Using the fact that
-\begin{align}
-\label{eq:boolean}
-\begin{split}
-X+X^{\prime} &= 1
-\\
-XX^{\prime} &= 0,
-\end{split}
-\end{align}
-%
-derive \eqref{eq:kmap_A} from \eqref{eq:A} algebraically.
-\end{problem}
-%
-%
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_B}
-}
-\caption{K-map for $B$.}
-\label{fig:kmap_B}
-\end{figure}
-
-\subsection{K-Map for $B$ }
-From Table \ref{table:counter_decoder}, using boolean logic,
-\begin{equation}
-\label{eq:B}
-B = WX^{\prime}Y^{\prime}Z^{\prime} + W^{\prime}XY^{\prime}Z^{\prime}
-+WX^{\prime}YZ^{\prime}
-+W^{\prime}XYZ^{\prime}
-\end{equation}
-%
-\begin{problem}
-Show that \eqref{eq:B} can be reduced to
-\begin{equation}
-\label{eq:kmap_B}
-B = WX^{\prime}Z^{\prime} + W^{\prime}XZ^{\prime}
-\end{equation}
-using Fig. \ref{fig:kmap_B}.
-\end{problem}
-\begin{problem}
-Derive \eqref{eq:kmap_B} from \eqref{eq:B} algebraically using \eqref{eq:boolean}.
-\end{problem}
-%
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_C}
-}
-\caption{K-map for $C$.}
-\label{fig:kmap_C}
-\end{figure}
-
-\subsection{K-Map for $C$ }
-From Table \ref{table:counter_decoder}, using boolean logic,
-\begin{equation}
-\label{eq:C}
-C = WXY^{\prime}Z^{\prime} + W^{\prime}X^{\prime}YZ^{\prime}
-+WX^{\prime}YZ^{\prime}
-+W^{\prime}XYZ^{\prime}
-\end{equation}
-%
-\begin{problem}
-Show that \eqref{eq:C} can be reduced to
-\begin{equation}
-\label{eq:kmap_C}
-C = WXY^{\prime}Z^{\prime}  +  X^{\prime}YZ^{\prime} + W^{\prime}YZ^{\prime}
-\end{equation}
-using Fig. \ref{fig:kmap_C}.
-\end{problem}
-\begin{problem}
-Derive \eqref{eq:kmap_C} from \eqref{eq:C} algebraically using \eqref{eq:boolean}.
-\end{problem}
-%
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_D}
-}
-\caption{K-map for $D$.}
-\label{fig:kmap_D}
-\end{figure}
-
-\subsection{K-Map for $D$ }
-From Table \ref{table:counter_decoder}, using boolean logic,
-\begin{equation}
-\label{eq:D}
-D = WXYZ^{\prime} + W^{\prime}X^{\prime}Y^{\prime}Z
-\end{equation}
-%
-\begin{problem}
-Minimize \eqref{eq:D} using Fig. \ref{fig:kmap_D}.
-\end{problem}
-\input{./figs/dont_care_table}
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_A_x}
-}
-\caption{K-map for $A$ with don't cares.}
-\label{fig:kmap_A_x}
-\end{figure}
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_B_x}
-}
-\caption{K-map for $B$ with don't cares.}
-\label{fig:kmap_B_x}
-\end{figure}
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_C_x}
-}
-\caption{K-map for $C$ with don't cares.}
-\label{fig:kmap_C_x}
-\end{figure}
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/kmap_D_x}
-}
-\caption{K-map for $D$ with don't cares.}
-\label{fig:kmap_D_x}
-\end{figure}
-
-\section{Don't Care Conditions}
-4 binary digits are used in the incrementing decoder in Fig. \ref{fig:dec_counter}.  However, only the numbers from 0-9 are used as input/output
-in the decoder and we {\em don't care} about the numbers from 10-15.  This phenomenon can be addressed by revising Table \ref{table:counter_decoder} to obtain
-Table \ref{table:dont_care_table}.
-
-The revised K-maps for A,B,C,D are now available in Figs. \ref{fig:kmap_A_x}-\ref{fig:kmap_D_x} resulting in 
-\begin{align}
-A &= {W}^{\prime}
-\\
-B &= WX^{\prime}Z^{\prime} + W^{\prime}X
-\\
-C &= {X}^{\prime}{Y} + {W}^{\prime}{Y} + {W}{X}{Y}^{\prime}
-\\
-D & = {W}^{\prime}{Z} + {W}{X}{Y}
-\end{align}
-which are simpler than \eqref{eq:kmap_A}, \eqref{eq:kmap_B}, \eqref{eq:kmap_C} and \eqref{eq:D}. 
-\section{Display Decoder}
-Table \ref{table:disp_dec} is the truth table for the display decoder in Fig. \ref{fig:dec_counter}.  
-\begin{problem}
-Use K-maps to obtain the minimized expressions for $a,b,c,d,e,f,g$ in terms of $A,B,C,D$ with and without don't care conditions.
-\end{problem}
-\input{./figs/disp_dec}
 \section{Finite State Machine}
 %
-Fig. \ref{fig:fsm_counter} shows a {\em finite state machine} (FSM) diagram for the decade counter in Fig. \ref{fig:dec_counter}.  $s_0$ is the state when the input to the incrementing decoder is 0.  The {\em state transition table} for the FSM is Table \ref{table:counter_decoder} where the present state is denoted by the variables $W,X,Y,Z$ and the next state by $A,B,C,D$.  
+\begin{enumerate}[1.]
+
+\item Fig. \ref{fig:fsm_counter} shows a {\em finite state machine} (FSM) diagram for the decade counter in Fig. \ref{fig:dec_counter}.  $s_0$ is the state when the input to the incrementing decoder is 0.  The {\em state transition table} for the FSM is Table 0 in \cite{gvv_kmap} where the present state is denoted by the variables $W,X,Y,Z$ and the next state by $A,B,C,D$.  
 \begin{figure}[!h]
 \centering
 %\resizebox {\columnwidth} {!} {
@@ -507,6 +312,7 @@ Fig. \ref{fig:fsm_counter} shows a {\em finite state machine} (FSM) diagram for 
 \caption{FSM for the decade counter.}
 \label{fig:fsm_counter}
 \end{figure}
+\item The FSM implementation is available in Fig. \ref{fig:dff}.  The {\em flip-flops} hold the input for the time that is given by the {\em clock}.  This is nothing but the implementation of the {\em Delay} block in Fig. \ref{fig:dec_counter}.
 %
 \begin{figure}[!h]
 \resizebox {\columnwidth} {!} {
@@ -515,55 +321,20 @@ Fig. \ref{fig:fsm_counter} shows a {\em finite state machine} (FSM) diagram for 
 \caption{Decade counter FSM implementation using D-Flip Flops.}
 \label{fig:dff}
 \end{figure}
-The FSM implementation is available in Fig. \ref{fig:dff}.  The {\em flip-flops} hold the input for the time that is given by the {\em clock}.  This is nothing but the implementation of the {\em Delay} block in Fig. \ref{fig:dec_counter}.
-The hardware cost of the system is given by
+%
+\item The hardware cost of the system is given by
 \begin{equation}
 \text{No. of D Flip-Flops} = \ceil{\log_{2}\brak{\text{No. of States}}}
 \end{equation}
 For the FSM in Fig. \ref{fig:fsm_counter}, the number of states is 9, hence the number flipflops required = 4.  
-\begin{problem}
-Design a decade down counter (counts from 9 to 0 repeatedly) using an FSM.  
-\end{problem}
-%the 
-%\newpage
-%\section{Component Pin Diagrams}
-%%
-%\input{chapter1}
-%
-
-%\newpage
-%\section{Display Control through Hardware }
-%\input{./chapters/chapter1}
-%%
-%\section{Display Control through Arduino Software}
-%\input{./chapters/chapter2}
-%%%
-%\section{Decade Counter through Arduino}
-%\input{./chapters/chapter3}
-%%
-%\section{Karnaugh Maps}
-%\input{./chapters/chapter4}
-%%
-%\section{Sequential Logic}
-%\input{./chapters/chapter5}
-%
-%\section{C Programming}
-%\input{./chapters/chapter6}
-
-%\input{arduinoport}
-
-%\bibliography{IEEEabrv,gvv_matrix}
-
-%\input{chapter2} 
-%%
-%\newpage
-%\section{$M$-ary Modulation}
-%\input{chapter3} 
-%
-%\newpage
-%\section{BER in Rayleigh Flat Slowly Fading Channels}
-%\input{chapter4} 
-
+\item Draw the state transition diagram for 
+a decade down counter (counts from 9 to 0 repeatedly) using an FSM.  
+\item Write the state transition table for the down counter.
+\item Obtain the state transition equations with and without don't cares.
+\item Verify your design using an arduino.
+\item Repeat the above exercises by designing a circuit that can detect 3 consecutive 1s in a bitstream. 
+\end{enumerate}
+\bibliography{IEEEabrv,gvv_kmap_fsm}
 \end{document}
 
 

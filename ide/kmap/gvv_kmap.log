@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  20 OCT 2018 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.15)  21 OCT 2018 08:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1297,21 +1297,6 @@ File: ee_nrc.eps Graphic file (type eps)
 \openout6 = `gvv_kmap.toc'.
 
 
-(./figs/decade_counter.tex
-Overfull \hbox (3.98401pt too wide) in paragraph at lines 49--49
- [][][]\OT1/txr/m/n/12 Incrementing 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 66.
-(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxr.fd
-File: omstxr.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 66.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 (./figs/counter_decoder.tex
 \gnumericTableWidth=\skip74
 \gnumericTableWidthComplete=\skip75
@@ -1324,18 +1309,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \gnumericColF=\skip82
 \gnumericColG=\skip83
 \gnumericColH=\skip84
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
-
-
-]
-(./figs/kmap_A.tex
+) (./figs/kmap_A.tex
 \@karnaughmap@local@testcaseone@=\count332
 \@karnaughmap@local@testcasetwo@=\count333
 \@karnaughmap@local@coordinateonecounter@=\count334
@@ -1348,7 +1322,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \@karnaughmap@local@coordinatetwocounter@=\count341
 \@karnaughmap@local@coordinateonecounter@=\count342
 \@karnaughmap@local@coordinatetwocounter@=\count343
-) (./figs/kmap_B.tex
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figs/kmap_B.tex
 \@karnaughmap@local@northwest@=\count344
 \@karnaughmap@local@southeast@=\count345
 \@karnaughmap@local@northwest@=\count346
@@ -1368,39 +1346,55 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 \@karnaughmap@local@coordinatetwocounter@=\count355
 \@karnaughmap@local@coordinateonecounter@=\count356
 \@karnaughmap@local@coordinatetwocounter@=\count357
-) [2] (./figs/kmap_D.tex
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1
+
+
+] (./figs/kmap_D.tex
 \@karnaughmap@local@northwest@=\count358
 \@karnaughmap@local@southeast@=\count359
 \@karnaughmap@local@northwest@=\count360
 \@karnaughmap@local@southeast@=\count361
-) (./figs/disp_dec.tex
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Reference `fig:dec_counter' on page 2 undefined on input line 41
+7.
+
+(./figs/disp_dec.tex
 \gnumericColI=\skip85
 \gnumericColJ=\skip86
 \gnumericColK=\skip87
 \gnumericColL=\skip88
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 434.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 434.
+) [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
+ [3
 
-(./gvv_kmap.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 434.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 434.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
+ (./gvv_kmap.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 422.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
 Package rerunfilecheck Info: File `gvv_kmap.out' has not changed.
-(rerunfilecheck)             Checksum: 7F60A8B1781AFC051CD5156C49F7EEF0;155.
+(rerunfilecheck)             Checksum: F8C92EFB4D8197EFF2287EB27B83D3D6;102.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
  ) 
 Here is how much of TeX's memory you used:
- 37232 strings out of 494848
- 783405 string characters out of 6179105
- 991528 words of memory out of 5000000
- 40076 multiletter control sequences out of 15000+600000
+ 37036 strings out of 494848
+ 780012 string characters out of 6179105
+ 1010042 words of memory out of 5000000
+ 39886 multiletter control sequences out of 15000+600000
  594476 words of font info for 175 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,16n,77p,10376b,1111s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_kmap.dvi (3 pages, 114804 bytes).
+Output written on gvv_kmap.dvi (3 pages, 99464 bytes).

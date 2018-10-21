@@ -281,26 +281,14 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 
 \begin{abstract}
 %\boldmath
-This manual explains Karnaugh maps (K-map) and state machines by deconstructing a decade counter.
+This manual explains Karnaugh maps (K-map) by finding the
+logic functions for the incrementing decoder.
 \end{abstract}
 
-
-\section{The Decade Counter}
-The block diagram of a decade counter (repeatedly counts up from 0 to 9)
-is available in Fig. \ref{fig:dec_counter}.  The {\em incrementing } decoder
-and {\em display} decoder are part of {\em combinational} logic, while
-the {\em delay} is part of {\em sequential} logic.
-\begin{figure}[!h]
-\resizebox {\columnwidth} {!} {
-\input{./figs/decade_counter}
-}
-\caption{The decade counter}
-\label{fig:dec_counter}
-\end{figure}
 %
 \section{Incrementing Decoder}
-The incrementing decoder in Fig. \ref{fig:dec_counter}  takes the numbers $0,1,\dots,9$ in binary as inputs and generates
-the consecutive number as output.  The corresponding truth table is available in Fig. \ref{table:counter_decoder}.
+The incrementing decoder   takes the numbers $0,1,\dots,9$ in binary as inputs and generates
+the consecutive number as output.  The corresponding truth table is available in Table. \ref{table:counter_decoder}.
 \input{./figs/counter_decoder}
 \section{Karnaugh Map}
 
