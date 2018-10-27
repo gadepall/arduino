@@ -31,11 +31,11 @@
 \usepackage{multirow}
 %\usepackage{algorithm}
 %\usepackage{algpseudocode}
-\usepackage{enumitem}
+\usepackage{enumerate}
 \usepackage{mathtools}
 \usepackage{eenrc}
 %\usepackage[framemethod=tikz]{mdframed}
-\usepackage{listings}
+	\usepackage{listings}
 \usepackage{listings}
     \usepackage[latin1]{inputenc}                                 %%
     \usepackage{color}                                            %%
@@ -96,9 +96,11 @@
 %\surroundwithmdframed[width=\columnwidth]{lstlisting}
 \def\inputGnumericTable{}                                 %%
 \lstset{
-language=C,
+%language=C,
 frame=single, 
-breaklines=true
+breaklines=true,
+columns=fullflexible,
+literate = {-}{-}1
 }
  
 
@@ -307,7 +309,7 @@ any Debain/Ubuntu system.
 %\IEEEpeerreviewmaketitle
 
 \section{Software Installation}
-\begin{enumerate}
+\begin{enumerate}[1.]
 \item From the sources.
 \begin{lstlisting}
 sudo apt-get update
@@ -322,13 +324,13 @@ tar xvf arduino-1.8.7-r1-linuxarm.tar.xz
 cd arduino-1.8.7
 ./install.sh
 cd ~
-sudo usermod -a -G dialout \$USER
+sudo usermod -a -G dialout $USER
 \end{lstlisting}
 Immediately logout and login.  You may replace 1.8.7 above with your favourite version.  Instead of using \textbf{wget}, you
 may download the \textbf{arduino-x.x.x-tar.zz} file directly from the downloads link in arduino.cc. 
 \end{enumerate}
 \section{Arduino IDE}
-\begin{enumerate}
+\begin{enumerate}[1.]
 \item Connect the Arduino to the computer.
 \item In the Arduino IDE, open File $\to$ Examples $\to$ Basics$\to$ Blink
 \item Now select Tools $\to$ Port $\to$ /dev/ttyACM0
