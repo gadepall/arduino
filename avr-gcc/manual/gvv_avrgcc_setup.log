@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  18 SEP 2019 10:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  18 SEP 2019 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -452,11 +452,7 @@ Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
 rate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
-) (/data/data/com.termux/files/home/texmf/tex/latex/eenrc/eenrc.sty
-
-LaTeX Warning: You have requested package `eenrc',
-               but the package provides `iithtlc'.
-
+) (/data/data/com.termux/files/home/texmf/tex/latex/iithtlc/iithtlc.sty
 Package: iithtlc 10/04/2016 IITH TLC
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/gr
@@ -1089,47 +1085,47 @@ File: tikzlibrarymatrix.code.tex 2019/02/02 v3.1.1 (3.1.1)
 ) (./gvv_avrgcc_setup.aux)
 \openout1 = `gvv_avrgcc_setup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 113.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 113
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 114.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 114
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
 txmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 113
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 114
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
 txsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 113
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 114
 .
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/omx
 txex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 113.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 113.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 114.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 114.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 exa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 113.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 113.
+LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 114.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1
@@ -1137,14 +1133,14 @@ txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 113.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 113
+LaTeX Info: Redefining \celsius on input line 114.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 114
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 113.
-Package gensymb Info: Using \Omega for \ohm on input line 113.
+LaTeX Info: Redefining \ohm on input line 114.
+Package gensymb Info: Using \Omega for \ohm on input line 114.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1169,52 +1165,52 @@ Package caption Info: End \AtBeginDocument code.
 \c@rem=\count324
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 280.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 280.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 281.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 281.
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ur
 sfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 280.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 281.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 mia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsya on input line 280.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 281.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 sya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 280.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 281.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 280.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 281.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-File: ee_nrc.eps Graphic file (type eps)
- <ee_nrc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 280.
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 281.
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-File: ee_nrc.eps Graphic file (type eps)
- <ee_nrc.eps>
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-File: ee_nrc.eps Graphic file (type eps)
- <ee_nrc.eps>
+File: tlc.eps Graphic file (type eps)
+ <tlc.eps>
 (./gvv_avrgcc_setup.toc)
 \tf@toc=\write4
 \openout4 = `gvv_avrgcc_setup.toc'.
@@ -1232,7 +1228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 230--230
  []
 
 )
-LaTeX Font Info:    Try loading font information for OML+txr on input line 315.
+LaTeX Font Info:    Try loading font information for OML+txr on input line 316.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oml
@@ -1240,7 +1236,7 @@ txr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <12> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 315.
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 316.
 
  (./figs/pinmap.tex)
 File: ./figs/Atmega168PinMap2.eps Graphic file (type eps)
@@ -1257,16 +1253,29 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) [1
 
 
-] [2
+] (./figs/lcd.tex
+LaTeX Font Info:    Calculating math sizes for size <20> on input line 56.
+) (./figs/table.tex
 
-] (./gvv_avrgcc_setup.aux) ) 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+Underfull \hbox (badness 4328) in paragraph at lines 388--389
+[]\OT1/txr/m/n/12 Design a sim-ple cal-cu-la-tor us-ing the AT-
+ []
+
+[2] (./gvv_avrgcc_setup.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 33906 strings out of 492615
- 733255 string characters out of 6118492
- 876561 words of memory out of 5000000
- 37403 multiletter control sequences out of 15000+600000
- 602124 words of font info for 196 fonts, out of 8000000 for 9000
+ 34152 strings out of 492615
+ 737551 string characters out of 6118492
+ 877561 words of memory out of 5000000
+ 37644 multiletter control sequences out of 15000+600000
+ 607707 words of font info for 215 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,14n,65p,674b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,65p,674b,1553s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_avrgcc_setup.dvi (2 pages, 15532 bytes).
+Output written on gvv_avrgcc_setup.dvi (2 pages, 29932 bytes).
