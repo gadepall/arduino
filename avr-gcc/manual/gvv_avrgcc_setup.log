@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  18 SEP 2019 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  19 SEP 2019 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,29 +1253,38 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) [1
 
 
-] (./figs/lcd.tex
+] (./figs/sevenseg.tex)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figs/pin.tex
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./figs/lcd.tex
 LaTeX Font Info:    Calculating math sizes for size <20> on input line 56.
 ) (./figs/table.tex
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)
-Underfull \hbox (badness 4328) in paragraph at lines 388--389
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) [2]
+Underfull \hbox (badness 4328) in paragraph at lines 449--450
 []\OT1/txr/m/n/12 Design a sim-ple cal-cu-la-tor us-ing the AT-
  []
 
-[2] (./gvv_avrgcc_setup.aux)
+[3
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./gvv_avrgcc_setup.aux) ) 
 Here is how much of TeX's memory you used:
- 34152 strings out of 492615
- 737551 string characters out of 6118492
+ 34275 strings out of 492615
+ 739652 string characters out of 6118492
  877561 words of memory out of 5000000
- 37644 multiletter control sequences out of 15000+600000
+ 37761 multiletter control sequences out of 15000+600000
  607707 words of font info for 215 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 55i,14n,65p,674b,1553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,65p,674b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_avrgcc_setup.dvi (2 pages, 29932 bytes).
+Output written on gvv_avrgcc_setup.dvi (3 pages, 40928 bytes).

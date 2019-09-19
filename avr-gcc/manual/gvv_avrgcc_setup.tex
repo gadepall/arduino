@@ -356,6 +356,67 @@ wget https://raw.githubusercontent.com/gadepall/arduino/master/avr-gcc/sevenseg/
 \item Repeat the above by writing a function.
 \item Use a for loop and include a delay to implement a decade counter
 \end{enumerate}
+\section{Standalone ATMEGA328P}
+\begin{enumerate}[1.]
+\item
+Take the ATMEGA328P IC from the Arduino board and plug it into the breadboard.
+
+%\begin{figure}[!h]
+%\begin{center}
+%\includegraphics[width=\columnwidth]{./figs/breadboard}
+%\end{center}
+%\caption{}
+%\label{fig:breadboard}
+%\end{figure}
+%
+\item
+Plug the seven segment display in Fig. \ref{fig:sevenseg} into the breadboard.
+
+
+\begin{figure}[!h]
+\begin{center}
+\resizebox {0.5\columnwidth} {!} {
+\input{./figs/sevenseg.tex}
+}
+\end{center}
+\caption{}
+\label{fig:sevenseg}
+\end{figure}
+
+\item
+Plug the Quartz crystal between pins 9 and 10 of the ATMEGA328P.
+
+%
+\item
+Connect the 22pF capacitors from pin 9 and 10 to GND.
+
+%
+%
+\item
+Connect the pin 1 through a 10 K$\Omega$ resistor to 5V.
+
+%
+%
+\item
+Connect one end of a push button to pin 1 and the other end to GND.
+
+%
+%\begin{figure}[!h]
+%\begin{center}
+%\includegraphics[width=\columnwidth]{./figs/Atmega168PinMap2}
+%\end{center}
+%\caption{}
+%\label{fig:breadboard}
+%\end{figure}
+%
+\item
+Make connections according to Table \ref{table:pin}.
+
+%
+\input{./figs/pin}
+\item
+Power up through USB.
+\end{enumerate}
 \section{Control LCD}
 %
 \begin{enumerate}[1.]
