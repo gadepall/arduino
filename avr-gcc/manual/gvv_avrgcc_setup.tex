@@ -338,6 +338,17 @@ for all the digital pins using Fig. \ref{fig:Atmega168PinMap2}.
 \label{fig:Atmega168PinMap2}
 \end{figure}
 %
+\item Plug the seven segment display in Fig. \ref{fig:sevenseg} into the breadboard.
+\begin{figure}[!h]
+\begin{center}
+\resizebox {0.5\columnwidth} {!} {
+\input{./figs/sevenseg.tex}
+}
+\end{center}
+\caption{}
+\label{fig:sevenseg}
+\end{figure}
+\item Connect 5V from the Arduino to the the COM pin of the display through a resistor.
 \item Make connections according to Table \ref{table:ass_arduinoport}.
 %
 \begin{table}[!ht]
@@ -356,6 +367,34 @@ wget https://raw.githubusercontent.com/gadepall/arduino/master/avr-gcc/sevenseg/
 \item Repeat the above by writing a function.
 \item Use a for loop and include a delay to implement a decade counter
 \end{enumerate}
+\section{Control LCD}
+%
+\begin{enumerate}[1.]
+\item Plug the LCD in Fig. \ref{fig:lcd} to the breadboard.
+\item Connect the Arduino pins to LCD pins as per Table \ref{table:lcd pins}.
+%
+\begin{figure}[!h]
+\begin{center}
+\resizebox {\columnwidth} {!} {
+\input{./figs/lcd.tex}
+}
+\end{center}
+\caption{LCD}
+\label{fig:lcd}
+\end{figure}
+%
+\input{./figs/table.tex}
+\item Download the  following directory from
+%
+\begin{lstlisting}
+svn checkout https://github.com/gadepall/arduino/trunk/avr-gcc/lcd/codes
+\end{lstlisting}
+and execute \textbf{main.c}
+\item Modify the above code to display a string.
+\item Modify the above code to obtain a decade counter so that the numbers from 0 to 9 are displayed on the lcd repeatedly.
+\item Repeat the above exercies to display a string on the first line and a number on the second line of the lcd.
+\item Write a program to implement all functions of a simple calculator and display on an LCD.
+\end{enumerate}
 \section{Standalone ATMEGA328P}
 \begin{enumerate}[1.]
 \item
@@ -373,15 +412,6 @@ Take the ATMEGA328P IC from the Arduino board and plug it into the breadboard.
 Plug the seven segment display in Fig. \ref{fig:sevenseg} into the breadboard.
 
 
-\begin{figure}[!h]
-\begin{center}
-\resizebox {0.5\columnwidth} {!} {
-\input{./figs/sevenseg.tex}
-}
-\end{center}
-\caption{}
-\label{fig:sevenseg}
-\end{figure}
 
 \item
 Plug the Quartz crystal between pins 9 and 10 of the ATMEGA328P.
@@ -416,34 +446,6 @@ Make connections according to Table \ref{table:pin}.
 \input{./figs/pin}
 \item
 Power up through USB.
-\end{enumerate}
-\section{Control LCD}
-%
-\begin{enumerate}[1.]
-\item Plug the LCD in Fig. \ref{fig:lcd} to the breadboard.
-\item Connect the Arduino pins to LCD pins as per Table \ref{table:lcd pins}.
-%
-\begin{figure}[!h]
-\begin{center}
-\resizebox {\columnwidth} {!} {
-\input{./figs/lcd.tex}
-}
-\end{center}
-\caption{LCD}
-\label{fig:lcd}
-\end{figure}
-%
-\input{./figs/table.tex}
-\item Download the  following directory from
-%
-\begin{lstlisting}
-svn checkout https://github.com/gadepall/arduino/trunk/avr-gcc/lcd/codes
-\end{lstlisting}
-and execute \textbf{main.c}
-\item Modify the above code to display a string.
-\item Modify the above code to obtain a decade counter so that the numbers from 0 to 9 are displayed on the lcd repeatedly.
-\item Repeat the above exercies to display a string on the first line and a number on the second line of the lcd.
-\item Write a program to implement all functions of a simple calculator and display on an LCD.
 \end{enumerate}
 \section{Project}
 Design a simple calculator using the ATMEGA328P.  Use push buttons for numbers and other arithmetic keys.  Solder all components on a PCB and power the circuit through a micro/typeC USB port.  Design and print a case for your calculator using a 3-D printer.  
