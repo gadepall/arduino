@@ -347,6 +347,26 @@ pio run -t nobuild -t upload
 \item The LED beside pin 13 will start
 blinking.
 \end{enumerate}
+\section{Arduino Droid}
+\begin{enumerate}[1.]
+	\item On your android device, install apkpure from 
+\begin{lstlisting}
+https://m.apkpure.com/
+\end{lstlisting}
+\item Install ArduinoDroid from apkpure
+\item Open ArduinoDroid and grant all permissions
+\item You may write programs in ArduinoDroid or use it to flash the .bin file generated
+	using platformio.
+\item For flashing the bin files,
+\begin{lstlisting}
+Actions->Upload->Upload Precompiled
+\end{lstlisting}
+then go to your working directory and select
+\begin{lstlisting}
+.pio/build/uno/firmware.hex
+\end{lstlisting}
+for uploading .hex file to the Arduino Uno.
+\end{enumerate}
 
 
 \end{document}
